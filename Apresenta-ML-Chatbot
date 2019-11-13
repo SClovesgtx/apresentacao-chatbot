@@ -1,0 +1,3219 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# O que é Machine-Learning?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_text](https://www.edureka.co/blog/wp-content/uploads/2018/03/AI-vs-ML-vs-Deep-Learning.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Os dois tipos de aprendizados mais populares"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_text](https://miro.medium.com/max/954/0*7lHSm-TrWkbxckI9.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_text](https://miro.medium.com/max/1954/1*reM8ITaSSXQ8YHse3vYpcw.jpeg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Tipos de Modelo de Aprendizagem Supervisionada\n",
+    "\n",
+    "\n",
+    "![alt_text](https://miro.medium.com/max/1200/1*Qn4eJPhkvrEQ62CtmydLZw.png)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Tipos de Modelos Mais Usados para Classificação\n",
+    "\n",
+    "Cada um dos modelos abaixo tem seus prós e contras, hiperparâmetros há serem ajustados e funções de custo há serem otimizadas.\n",
+    "\n",
+    "* [Regressão Logística](https://pt.wikipedia.org/wiki/Regress%C3%A3o_log%C3%ADstica)\n",
+    "![alt_text](https://qph.fs.quoracdn.net/main-qimg-914b29e777e78b44b67246b66a4d6d71)\n",
+    "* [Floresta de Árvores Aleatórias](https://medium.com/machina-sapiens/o-algoritmo-da-floresta-aleat%C3%B3ria-3545f6babdf8)\n",
+    "![alt_text](https://miro.medium.com/max/592/1*i0o8mjFfCn-uD79-F1Cqkw.png)\n",
+    "* [Máquina de Vetor Suporte](https://pt.wikipedia.org/wiki/M%C3%A1quina_de_vetores_de_suporte)\n",
+    "![alt_tex](http://cdn.lowgif.com/full/643ee71b48cb0a47-linear-algebra-math-programming.gif)\n",
+    "![alt_text](https://66.media.tumblr.com/0e459c9df3dc85c301ae41db5e058cb8/tumblr_inline_n9xq5hiRsC1rmpjcz.jpg)\n",
+    "* [Redes Neurais Artificias](http://deeplearningbook.com.br/o-que-sao-redes-neurais-artificiais-profundas/)\n",
+    "Muito usada para classificação de imagens mas desde 2014 Redes Neurais Convolucionais estão sendo usadas para classificação de texto.\n",
+    "![alt_text](https://thumbs.gfycat.com/ContentDarlingCub-small.gif)\n",
+    "![alt_text](https://mlwhiz.com/images/text_convolution.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Em 1959, os neurocientistas David Hubel e Torsten Wiesel realizaram um experimento para obter informações sobre os mecanismos de processamento visual do cérebro. Eles conectaram um microeletrodo ao córtex visual de um gato anestesiado e projetaram imagens na frente do gato para determinar quais imagens causariam a ativação desses neurônios. Em vez de encontrar neurônios \"quadrados\" ou \"circulares\" que ativavam quando essas formas eram projetadas, eles observavam neurônios que só eram ativados quando eram exibidas linhas em ângulos específicos ou certos padrões de luz e escuridão.\n",
+    "\n",
+    "Por exemplo, suponha que haja quatro neurônios que são ativados para os seguintes recursos:\n",
+    "\n",
+    "<img src='img/20.png'>\n",
+    "\n",
+    "Quais neurônios serão ativados se virem esta imagem?\n",
+    "\n",
+    "<img src='img/21.png'>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_text](https://static.significados.com.br/foto/partes-neuronio.jpg)\n",
+    "![alt_text](http://www.cerebromente.org.br/n05/tecnologia/neuronio_artificial.gif)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Chatbot é um problema de Classificação\n",
+    "\n",
+    "Dado o texto do usuário o modelo precisa identificar qual classe de intenções do cliente que o texto pertence e assim responder de maneira apropriada.\n",
+    "\n",
+    "![alt_text](https://www.researchgate.net/profile/Kamran_Kowsari/publication/319968747/figure/download/fig2/AS:631638706880512@1527605811202/HDLTex-Hierarchical-Deep-Learning-for-Text-Classification-This-is-our-Deep-Neural.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Como Transformar Texto em um Vetor Numérico?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_tex](http://uc-r.github.io/public/images/analytics/feature-engineering/bow-image.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Diminuindo dimensão usando stemming, Lemmatization e removendo Stop Words\n",
+    "\n",
+    "![alt_text](https://qph.fs.quoracdn.net/main-qimg-cd7f4bafaa42639deb999b1580bea69f)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Removendo Stopwords"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['de', 'a', 'o', 'que', 'e']"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import nltk\n",
+    "\n",
+    "stopwordsNLTK = nltk.corpus.stopwords.words('portuguese')\n",
+    "\n",
+    "stopwordsNLTK[:5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def remove_stopwords(texto):\n",
+    "    sem_stopwords = [palavra.lower() for palavra in texto.split() if palavra not in stopwordsNLTK]\n",
+    "    return sem_stopwords"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['vazando', 'desde', 'ontem']"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tokens_sem_stopwords = remove_stopwords(\"é que está vazando desde ontem\")\n",
+    "tokens_sem_stopwords"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Aplicando Técnica de Stemmer (extração de radical)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# RSLPStemmer é um stmmer para a lingua portuguesa\n",
+    "stemmer = nltk.stem.RSLPStemmer()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'vaz'"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stemmer.stem(\"vazamento\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'vaz'"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stemmer.stem(\"vazar\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'vaz'"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stemmer.stem(\"vazando\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'vaz'"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stemmer.stem(\"vazou\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['vaz', 'desd', 'ont']"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stemmer_text = [stemmer.stem(palavra) for palavra in tokens_sem_stopwords]\n",
+    "stemmer_text"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Aplicando Lemmatization (forma base) com o Pacote spaCy\n",
+    "\n",
+    "<img src='img/19.png'>\n",
+    "<img src='img/7.png'>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Palavra: é | Base: ser\n",
+      "Palavra: que | Base: que\n",
+      "Palavra: está | Base: estar\n",
+      "Palavra: vazando | Base: vazar\n",
+      "Palavra: desde | Base: desde\n",
+      "Palavra: ontem | Base: ontem\n"
+     ]
+    }
+   ],
+   "source": [
+    "import spacy\n",
+    "\n",
+    "nlp = spacy.load('pt_core_news_sm')\n",
+    "\n",
+    "# Process a text\n",
+    "tokens = nlp(\"é que está vazando desde ontem\")\n",
+    "\n",
+    "for token in tokens:\n",
+    "    print(\"Palavra: %s | Base: %s\" %(token.text, token.lemma_))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Desvantagens da Abordagem Bag of Words"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Quando se trata de dados de texto bruto, especialmente modelos baseados em contagem, como Bag of Words, estamos lidando com palavras individuais, que podem ter seus próprios identificadores, e não capturamos o relacionamento semântico entre as palavras. Isso leva a enormes vetores de palavras esparsas para dados textuais e, portanto, se não tivermos dados suficientes, podemos acabar obtendo modelos ruins ou até superajustar os dados devido à [Maldição da Dimensionalidade](https://en.wikipedia.org/wiki/Curse_of_dimensionality)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Word Embeddings (Palavras Incorporadas)\n",
+    "\n",
+    "* [Deep Transfer Learning for Natural Language Processing — Text Classification with Universal Embeddings](https://towardsdatascience.com/deep-transfer-learning-for-natural-language-processing-text-classification-with-universal-1a2c69e5baa9)\n",
+    "\n",
+    "* [Repositório de Word Embeddings do NILC](http://nilc.icmc.usp.br/embeddings)\n",
+    "\n",
+    "<img src='img/13.png'>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**\"Uma *Palavra Encorporada* é um vetor de comprimento fixo normalmente usado para codificar e representar uma entidade (documento, sentença, palavra!)\"**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Métodos preditivos, como os modelos de linguagem baseados na Rede Neural, tentam prever palavras de suas palavras vizinhas, observando seqüências de palavras no corpus e, no processo, aprendem representações distribuídas, nos fornecendo densas combinações de palavras.\n",
+    "\n",
+    "Se tivermos uma boa representação numérica dos dados de texto que captura até o contexto e a semântica, podemos usá-los para uma ampla variedade de tarefas do mundo real, como análise de sentimentos, classificação de texto, agrupamento, resumo, tradução e assim por diante. O fato é que os modelos de aprendizado de máquina ou de aprendizado profundo são executados em números e os incorporamentos são a chave para codificar os dados de texto que serão usados por esses modelos."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Uma grande tendência aqui foi descobrir as 'Embeddings universais', que são basicamente casamentos pré-treinados, obtidos com o treinamento de modelos de aprendizado profundo em um corpus enorme. Isso nos permite usar essas combinações pré-treinadas (genéricas) em uma ampla variedade de tarefas, incluindo cenários com restrições como falta de dados adequados.\n",
+    "\n",
+    "* Do pacote spaCy temos [pt_core_news_sm](https://spacy.io/usage/models)\n",
+    "* [Repositório de Word Embeddings do NILC\n",
+    "NILC - Núcleo Interinstitucional de Linguística Computacional](http://nilc.icmc.usp.br/embeddings)\n",
+    "\n",
+    "É possível também treinar nosso próprio Word Embeddings usando pacote [Gesim](https://machinelearningmastery.com/develop-word-embeddings-python-gensim/)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Spacy inclusive possue uma visualização gráfico das dependências sintáticas chamado [Displacy](https://explosion.ai/demos/displacy). (e.g \"Um cano estourou na rua aqui de casa\")."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import spacy\n",
+    "\n",
+    "nlp = spacy.load('pt_core_news_sm')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Um DET\n",
+      "cano NOUN\n",
+      "estourou VERB\n",
+      "na DET\n",
+      "rua NOUN\n",
+      "aqui ADV\n",
+      "de ADP\n",
+      "casa NOUN\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Process a text\n",
+    "doc = nlp(\"Um cano estourou na rua aqui de casa\")\n",
+    "\n",
+    "for token in doc:\n",
+    "    print(token.text, token.pos_)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'determiner'"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spacy.explain('DET')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'adposition'"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spacy.explain('ADP')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/usr/lib/python3.6/runpy.py:193: UserWarning: [W011] It looks like you're calling displacy.serve from within a Jupyter notebook or a similar environment. This likely means you're already running a local web server, so there's no need to make displaCy start another one. Instead, you should be able to replace displacy.serve with displacy.render to show the visualization.\n",
+      "  \"__main__\", mod_spec)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/html": [
+       "<!DOCTYPE html>\n",
+       "<html lang=\"pt\">\n",
+       "    <head>\n",
+       "        <title>displaCy</title>\n",
+       "    </head>\n",
+       "\n",
+       "    <body style=\"font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; padding: 4rem 2rem; direction: ltr\">\n",
+       "<figure style=\"margin-bottom: 6rem\">\n",
+       "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:lang=\"pt\" id=\"bfd3afba988947cd93dd1db6d4c93c4d-0\" class=\"displacy\" width=\"1450\" height=\"399.5\" direction=\"ltr\" style=\"max-width: none; height: 399.5px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr\">\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"50\">Um</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"50\">DET</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"225\">cano</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"225\">NOUN</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"400\">estourou</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"400\">VERB</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"575\">na</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"575\">DET</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"750\">rua</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"750\">NOUN</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"925\">aqui</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"925\">ADV</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"1100\">de</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"1100\">ADP</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<text class=\"displacy-token\" fill=\"currentColor\" text-anchor=\"middle\" y=\"309.5\">\n",
+       "    <tspan class=\"displacy-word\" fill=\"currentColor\" x=\"1275\">casa</tspan>\n",
+       "    <tspan class=\"displacy-tag\" dy=\"2em\" fill=\"currentColor\" x=\"1275\">NOUN</tspan>\n",
+       "</text>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-0\" stroke-width=\"2px\" d=\"M70,264.5 C70,177.0 215.0,177.0 215.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-0\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">det</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M70,266.5 L62,254.5 78,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-1\" stroke-width=\"2px\" d=\"M245,264.5 C245,177.0 390.0,177.0 390.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-1\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">nsubj</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M245,266.5 L237,254.5 253,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-2\" stroke-width=\"2px\" d=\"M420,264.5 C420,177.0 565.0,177.0 565.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-2\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">obj</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M565.0,266.5 L573.0,254.5 557.0,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-3\" stroke-width=\"2px\" d=\"M420,264.5 C420,89.5 745.0,89.5 745.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-3\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">obj</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M745.0,266.5 L753.0,254.5 737.0,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-4\" stroke-width=\"2px\" d=\"M420,264.5 C420,2.0 925.0,2.0 925.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-4\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">advmod</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M925.0,266.5 L933.0,254.5 917.0,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-5\" stroke-width=\"2px\" d=\"M1120,264.5 C1120,177.0 1265.0,177.0 1265.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-5\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">case</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M1120,266.5 L1112,254.5 1128,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "\n",
+       "<g class=\"displacy-arrow\">\n",
+       "    <path class=\"displacy-arc\" id=\"arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-6\" stroke-width=\"2px\" d=\"M945,264.5 C945,89.5 1270.0,89.5 1270.0,264.5\" fill=\"none\" stroke=\"currentColor\"/>\n",
+       "    <text dy=\"1.25em\" style=\"font-size: 0.8em; letter-spacing: 1px\">\n",
+       "        <textPath xlink:href=\"#arrow-bfd3afba988947cd93dd1db6d4c93c4d-0-6\" class=\"displacy-label\" startOffset=\"50%\" side=\"left\" fill=\"currentColor\" text-anchor=\"middle\">obl</textPath>\n",
+       "    </text>\n",
+       "    <path class=\"displacy-arrowhead\" d=\"M1270.0,266.5 L1278.0,254.5 1262.0,254.5\" fill=\"currentColor\"/>\n",
+       "</g>\n",
+       "</svg>\n",
+       "</figure>\n",
+       "</body>\n",
+       "</html>"
+      ],
+      "text/plain": [
+       "<IPython.core.display.HTML object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Using the 'dep' visualizer\n",
+      "Serving on http://0.0.0.0:5000 ...\n",
+      "\n",
+      "Shutting down server on port 5000.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# podemos também visualizar localhost \n",
+    "spacy.displacy.serve(doc, style='dep')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'adposition'"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spacy.explain('ADP')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<img src='img/14.png'>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Word2Vec\n",
+    "\n",
+    "Esses modelos são baseados no princípio da [hipótese distributiva](https://en.wikipedia.org/wiki/Distributional_semantics#Distributional_Hypothesis) no campo da [semântica distributiva](https://en.wikipedia.org/wiki/Distributional_semantics#Distributional_Hypothesis), que nos ajudam a identificar palavras que ocorrem e são usadas no mesmo contexto e que são semanticamente semelhantes entre si.\n",
+    "<img src='img/15.png'>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "Um cano estourou na rua aqui de casa, está vazando desde ontem"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import spacy\n",
+    "\n",
+    "nlp = spacy.load('pt_core_news_sm')\n",
+    "\n",
+    "# Process a text\n",
+    "tokens = nlp(\"Um cano estourou na rua aqui de casa, está vazando desde ontem\")\n",
+    "\n",
+    "tokens"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'cano'"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cano = tokens[1]\n",
+    "cano.text"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# O token possui uma representação vetorial?\n",
+    "cano.has_vector"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 11.025038 ,  -1.9312024,  -5.6146545,  -4.1850834,   1.6563925,\n",
+       "       -10.411276 ,   1.1652056,  -5.3233867,  11.398384 ,  -1.3168468],\n",
+       "      dtype=float32)"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cano.vector[:10]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(96,)"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cano.vector.shape"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Similaridade\n",
+    "\n",
+    "Os vetores incorporados do modelo pt_core_news_sm já possue informações sobre as similaridades contextuais e semânticas."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n",
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n",
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n",
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "vazamento boleto 0.5263323\n",
+      "vazamento manga 0.18787381\n",
+      "boleto vazamento 0.5263323\n",
+      "boleto manga 0.48929363\n",
+      "manga vazamento 0.18787381\n",
+      "manga boleto 0.48929363\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n",
+      "/usr/lib/python3.6/runpy.py:193: ModelsWarning: [W007] The model you're using has no word vectors loaded, so the result of the Token.similarity method will be based on the tagger, parser and NER, which may not give useful similarity judgements. This may happen if you're using one of the small models, e.g. `en_core_web_sm`, which don't ship with word vectors and only use context-sensitive tensors. You can always add your own word vectors, or use one of the larger models instead if available.\n",
+      "  \"__main__\", mod_spec)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Process a text\n",
+    "tokens = nlp(\"vazamento boleto manga\")\n",
+    "\n",
+    "for token1 in tokens:\n",
+    "    for token2 in tokens:\n",
+    "        if token2 != token1:\n",
+    "            print(token1.text, token2.text, token1.similarity(token2));"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Baseado no Produto interno entre dois vetores"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<img src='img/dotproduct.jpg'>\n",
+    "\n",
+    "<img src='img/16.png'>\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Incorporação de Sentença: combinando vetores densos\n",
+    "\n",
+    "Um modelo de incorporação de sentença de linha de base pode ser construído calculando a média das incorporações de palavras individuais para cada sentença/documento (tipo semelhante ao conjunto de palavras, onde perdemos o contexto e a sequência de palavras inerentes à sentença)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "def average_word_vectors(tokens, num_features):\n",
+    "    \n",
+    "    feature_vector = np.zeros((num_features,), dtype='float32')\n",
+    "    for word in tokens:\n",
+    "        print(word.text, word.vector.shape)\n",
+    "        feature_vector += word.vector\n",
+    "        \n",
+    "    return feature_vector / len(tokens)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Um (96,)\n",
+      "cano (96,)\n",
+      "estourou (96,)\n",
+      "na (96,)\n",
+      "rua (96,)\n",
+      "aqui (96,)\n",
+      "de (96,)\n",
+      "casa (96,)\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "array([-0.74732256, -2.4158332 , -5.123697  ,  0.7673069 ,  4.450843  ,\n",
+       "       -7.1539626 , -2.8522456 , -0.30373645,  2.3292742 ,  3.0537562 ,\n",
+       "        6.129222  ,  4.5738645 , -1.7062902 ,  0.14977497, -1.8002338 ,\n",
+       "       -0.02843773, -1.5782434 , -0.18590909, -2.6484613 , -1.225795  ,\n",
+       "       -2.9067454 , -0.32277158,  2.2303848 ,  2.1678457 ,  2.9743326 ,\n",
+       "        2.275094  ,  9.3732    , -7.981429  , -0.9101691 , -1.4169981 ,\n",
+       "       -0.9864963 , -0.6466261 ,  5.67784   ,  4.414238  ,  2.1742022 ,\n",
+       "        2.036604  ,  0.9386961 ,  0.74876285,  4.4146028 ,  3.212454  ,\n",
+       "        4.713766  ,  2.9665153 , -0.10644591, -4.0042343 , -1.5688952 ,\n",
+       "        1.2606916 , -6.559508  , -0.9332159 , -1.2147477 ,  2.6036339 ,\n",
+       "       -3.7768402 , -6.5447865 ,  1.4671088 , -2.181819  , -3.9178665 ,\n",
+       "       -3.3832724 , -0.15307426,  0.8306595 , -3.2745116 ,  3.7030008 ,\n",
+       "        0.7757505 , -2.658854  ,  0.47384942, -2.2183614 ,  1.9734192 ,\n",
+       "       -8.178175  , -3.3921046 ,  1.4854004 , -1.1983037 ,  2.507688  ,\n",
+       "       -2.4509802 ,  2.0865889 ,  0.62510055, -1.4571142 ,  3.216142  ,\n",
+       "        3.313913  , -3.007977  , -1.4974746 , -1.0008469 , -4.2272844 ,\n",
+       "        0.4263667 , -0.12083089,  2.551927  , -4.519935  ,  2.7450943 ,\n",
+       "       -1.4164674 ,  0.19623405, -2.4263256 ,  2.6793551 ,  5.577628  ,\n",
+       "       -1.3091507 ,  0.23456901,  0.7205845 ,  1.4453539 , -0.7085978 ,\n",
+       "        2.5693188 ], dtype=float32)"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Process a text\n",
+    "tokens = nlp(\"Um cano estourou na rua aqui de casa\")\n",
+    "\n",
+    "dim = tokens[0].vector.shape[0]\n",
+    "\n",
+    "# pegar só os 10 primeiros itens\n",
+    "average_word_vectors(tokens, dim)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Existem maneiras mais sofisticadas de aglutinar estes vetores. Por exemplo:\n",
+    "\n",
+    "<img src='img/22.png'>\n",
+    "\n",
+    "Podemos usar o TF-IDF (abreviação do inglês term frequency–inverse document frequency, que significa frequência do termo–inverso da frequência nos documentos) como pesos há serem associados a cada palavra."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Criando Corpus"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import sys\n",
+    "\n",
+    "sys.path.append('../')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from corpora.corpus import Corpus;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "FileNotFoundError",
+     "evalue": "[Errno 2] No such file or directory: '/home/cloves/Documents/omni-chatbot-builder/presentations/corpora/existing_corpus/standard_corpus.json'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-5-fe1b753512ab>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mcedae\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mCorpus\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m'cedae_teste'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m~/Documents/omni-chatbot-builder/corpora/corpus.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, name, standard, exist, IBM)\u001b[0m\n\u001b[1;32m     95\u001b[0m                                          \"standard_corpus.json\")\n\u001b[1;32m     96\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 97\u001b[0;31m                 \u001b[0;32mwith\u001b[0m \u001b[0mopen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstandard_path\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mjson_data\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     98\u001b[0m                     \u001b[0mstandard_corpus\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mjson\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mload\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mjson_data\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     99\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcorpus\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mstandard_corpus\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: '/home/cloves/Documents/omni-chatbot-builder/presentations/corpora/existing_corpus/standard_corpus.json'"
+     ]
+    }
+   ],
+   "source": [
+    "cedae = Corpus(name='cedae_teste')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'intents': [{'intent': 'General_Greetings',\n",
+       "   'examples': ['Olá',\n",
+       "    'Bom dia!',\n",
+       "    'Boa tarde',\n",
+       "    'Boa noite',\n",
+       "    'tudo bem?',\n",
+       "    'como você está?',\n",
+       "    'ei, você está aí?',\n",
+       "    'oi',\n",
+       "    'olá, pode me ajudar?']},\n",
+       "  {'intent': 'End_Conversation',\n",
+       "   'examples': ['tchau',\n",
+       "    'obrigado pela ajuda',\n",
+       "    'até logo',\n",
+       "    'até mais',\n",
+       "    'agradecido',\n",
+       "    'chau',\n",
+       "    'tenho que ir agora',\n",
+       "    'estou indo embora',\n",
+       "    'fui nessa',\n",
+       "    'grato']}],\n",
+       " 'meta_data': {'corpus_name': 'cedae_teste'}}"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.corpus"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Adicionando Novas Intenções ao Corpus"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.add_intent(\"vazamento\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "examples = [\"tenho um vazamento em casa\",\n",
+    "    \"tem um vazamento na minha caixa d'água, a Cedae pode vir consertar\",\n",
+    "    \"posso acionar a cedae para um vazamento dentro da minha casa\",\n",
+    "    \"Gostaria de reportar um vazamento\",\n",
+    "    \"Estourou um cano aqui na rua perto de casa\",\n",
+    "    \"está vazando o esgoto\",\n",
+    "    \"muita água vazando aqui em casa\",\n",
+    "    \"o vazamento\",\n",
+    "    \"cano está vazando\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.add_examples(intent=\"vazamento\", examples=examples)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'intents': [{'intent': 'General_Greetings',\n",
+       "   'examples': ['Olá',\n",
+       "    'Bom dia!',\n",
+       "    'Boa tarde',\n",
+       "    'Boa noite',\n",
+       "    'tudo bem?',\n",
+       "    'como você está?',\n",
+       "    'ei, você está aí?',\n",
+       "    'oi',\n",
+       "    'olá, pode me ajudar?']},\n",
+       "  {'intent': 'End_Conversation',\n",
+       "   'examples': ['tchau',\n",
+       "    'obrigado pela ajuda',\n",
+       "    'até logo',\n",
+       "    'até mais',\n",
+       "    'agradecido',\n",
+       "    'chau',\n",
+       "    'tenho que ir agora',\n",
+       "    'estou indo embora',\n",
+       "    'fui nessa',\n",
+       "    'grato']},\n",
+       "  {'intent': 'vazamento',\n",
+       "   'examples': ['tenho um vazamento em casa',\n",
+       "    \"tem um vazamento na minha caixa d'água, a Cedae pode vir consertar\",\n",
+       "    'posso acionar a cedae para um vazamento dentro da minha casa',\n",
+       "    'Gostaria de reportar um vazamento',\n",
+       "    'Estourou um cano aqui na rua perto de casa',\n",
+       "    'está vazando o esgoto',\n",
+       "    'muita água vazando aqui em casa',\n",
+       "    'o vazamento',\n",
+       "    'cano está vazando']}],\n",
+       " 'meta_data': {'corpus_name': 'cedae_teste'}}"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.corpus"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.save()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### File de Corpus que já Existente no Watson Assistent"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "jucerja = Corpus(name=\"skill-JUCERJA-BKP-03_22_2019-16_26\", exist=True, IBM=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'intents': [{'intent': 'WorkingHours',\n",
+       "   'examples': ['que horas a junta comercial abre',\n",
+       "    'a jucerja fecha ao meio dia',\n",
+       "    'que horas começam os atendimentos',\n",
+       "    'que horas a jucerja esta aberta',\n",
+       "    'até que horas ele fica aberto',\n",
+       "    'que horas começo o atendimento da jucerja',\n",
+       "    'Qual o horário de atendimento da secretaria',\n",
+       "    'qual o horário de atendimento da jucerja',\n",
+       "    'qual o horário de encerramento da jucerja',\n",
+       "    'que horas abre a junta',\n",
+       "    'a jucerja abre no sábado',\n",
+       "    'que horas é o  atendimento',\n",
+       "    'que horas a jucerja fecha',\n",
+       "    'até que horas a jucerja fica aberta',\n",
+       "    'até que horas a junta fica aberta',\n",
+       "    'qual o horário da secretaria',\n",
+       "    'qual o horário de funcionamento',\n",
+       "    'a jucerja abre a noite']},\n",
+       "  {'intent': 'acesso',\n",
+       "   'examples': ['Como faço pra acessar os dados do processo simplificado do Portal do Corpo de bombeiros',\n",
+       "    'Meu processo está vinculado a uma pessoa/CPF a qual não tenho mais contato',\n",
+       "    'Mensagem Credencial já autenticada para outro endereço',\n",
+       "    'Não tenho mais acesso ao e-mail cadastrado. Como recuperar minha senha',\n",
+       "    'Como consultar os dados do meu processo no corpo dos bombeiros',\n",
+       "    'O que fazer quando esquecer a senha?',\n",
+       "    'Como gerar a guia  para emitir o certificado dos bombeiros',\n",
+       "    'Esqueci minha senha',\n",
+       "    'É possível realizar um login de empresa?',\n",
+       "    'Não me recordo meu login no Portal',\n",
+       "    'Desejo cadastrar um login de empresa (CNPJ)']},\n",
+       "  {'intent': 'documentação',\n",
+       "   'examples': ['tirar duvidas sobre relatorio',\n",
+       "    'Quais os documentos exigidos para a nomeação de um leiloeiro',\n",
+       "    'Erro ao obter o documento',\n",
+       "    'Quais os documentos que devo apresentar com o protocolo web.',\n",
+       "    'Como proceder quando o documento digital está faltando folha?',\n",
+       "    'Quais documentos são necessários que seja apresentado além do protocolo?',\n",
+       "    'É obrigatório reconhecimento de firma']},\n",
+       "  {'intent': 'Contact_Phone',\n",
+       "   'examples': ['Para quem posso ligar?',\n",
+       "    'Tel Comunicação ',\n",
+       "    'não completa ligacao',\n",
+       "    'Quais são os telefones?',\n",
+       "    'Podemos falar por telefone?',\n",
+       "    'Quero ligar para a ouvidoria',\n",
+       "    'este número não completa ligação',\n",
+       "    'Gostaria de entrar em contato telefonico',\n",
+       "    'Qual o tel',\n",
+       "    'Como faço contato telefonico',\n",
+       "    'Tel Comunicação',\n",
+       "    'Qual o fone',\n",
+       "    'me da o número da central de atendimento',\n",
+       "    'Tem o fone da jucerja?',\n",
+       "    'Vocês tem algum número?',\n",
+       "    'qual o contato da JUCERJA',\n",
+       "    'Gostaria de saber em quais números de telefone posso ligar.',\n",
+       "    'Gostaria de efetuar uma ligação',\n",
+       "    'Como faço para ligar para vocês',\n",
+       "    'Quais os telefones?']},\n",
+       "  {'intent': 'General_Ending',\n",
+       "   'examples': ['Com licença, tenho que ir agora',\n",
+       "    'tchau',\n",
+       "    'Eu estou indo agora. Tenha um bom dia. Tchau',\n",
+       "    'agradecida',\n",
+       "    'pare esta sessão agora..Tchau',\n",
+       "    'Quero encerrar a conversa, obrigado.',\n",
+       "    'Só isso obg',\n",
+       "    'Vou sair agora. Tchau',\n",
+       "    'Ok, isso é tudo que eu preciso para agora.',\n",
+       "    'Te desejo o melhor de sorte..Tchau',\n",
+       "    'Obrigada, tchau!',\n",
+       "    'Eu preciso correr porque acabei de notar que estou atrasado para o meu próximo compromisso',\n",
+       "    'Falo contigo depois. Tchau',\n",
+       "    'Muito obrigado pelo seu tempo. Me desculpe, mas eu tenho que ir. Até logo!',\n",
+       "    'tchu',\n",
+       "    'Vejo você mais tarde.',\n",
+       "    'fui nessa',\n",
+       "    'muito obrigado',\n",
+       "    'muito obrigada',\n",
+       "    'Me tire daqui.',\n",
+       "    'valeu',\n",
+       "    'agradeço pela atenção',\n",
+       "    'obrigada',\n",
+       "    'partiu',\n",
+       "    'parabéns',\n",
+       "    'ok obrigado',\n",
+       "    'fui',\n",
+       "    'Beijos',\n",
+       "    'agradeço',\n",
+       "    'Ainda não terminou?',\n",
+       "    'Vamos dar uma pausa e tentar novamente mais tarde..Tchau',\n",
+       "    'Sempre a vossa disposição',\n",
+       "    'até mais',\n",
+       "    'adeus',\n",
+       "    'bye',\n",
+       "    'tcha',\n",
+       "    'tvhau',\n",
+       "    'Ok, grata',\n",
+       "    'Desculpe ter ocupado tanto do seu tempo. Eu sei que estamos os dois ocupados e acho que tenho que dizer tchau por ora..',\n",
+       "    'Obrigado pela sua ajuda, mas ainda estou confuso…tchau',\n",
+       "    'Você foi de pouca ajuda, por isso não quero falar com você mais, tchau',\n",
+       "    'Volto mais tarde.',\n",
+       "    'Tudo bem, eu tenho tudo o que eu precisava',\n",
+       "    'obrigado',\n",
+       "    'muito bom o seu atendimento',\n",
+       "    'chau',\n",
+       "    'Obrigado por responder todas as minhas perguntas. Tchau',\n",
+       "    'Estou cansado de digitar agora. Obrigado e adeus',\n",
+       "    'até logo',\n",
+       "    'Estou indo embora.',\n",
+       "    'thcau']},\n",
+       "  {'intent': 'acompanhamento',\n",
+       "   'examples': ['não localizei o meu endereço na viabilidade',\n",
+       "    'meu processo esta preso em pendencia de validação',\n",
+       "    'Fiz busca de reentrada de nome e meu DBE continua com nome antigo',\n",
+       "    'meu processo foi finalizado',\n",
+       "    'Como verifico o andamento do processo',\n",
+       "    'Meu DBE continua antigo mesmo depois de uma busca de reentrada do meu nome.',\n",
+       "    'processo finalizado',\n",
+       "    'Ao preencher a viabilidade, o endereço não é encontrado.',\n",
+       "    'Meu processo foi liberado mas o cnpj nao foi alterado',\n",
+       "    'Como acompanhar o pedido de Inscrição Estadual',\n",
+       "    'Meu pedido consta com PENDENCIA NA VALIDAÇÃO',\n",
+       "    'meu processo foi finalizado, mas não aparece REGIN, ao realizar a consulta',\n",
+       "    'aonde eu consulto o andamento da viabilidade',\n",
+       "    'Como verifico o número do protocolo gerado',\n",
+       "    'como acompanho o andamento da minha viabilidade?',\n",
+       "    'quais os serviços a jucerja atende',\n",
+       "    'Gostaria de recuperar o número do protocolo.',\n",
+       "    'Como verificar o status do processo?',\n",
+       "    'meu endereço naão aparece no regin',\n",
+       "    'Preciso consultar minha viabilidade, como faço?',\n",
+       "    'Se meu endereço não aparecer na viabilidade, o que eu devo fazer?']},\n",
+       "  {'intent': 'representação',\n",
+       "   'examples': ['É necessário um representante pra assinar pelo sócio PJ?',\n",
+       "    'O contador representando a empresa pode assinar digitalmente',\n",
+       "    'Quem assina com o certificado digital no caso de sócio Pessoa Jurídica',\n",
+       "    'Pode haver uma assinatura digital pelo contador responsável pela empresa?']},\n",
+       "  {'intent': 'gerar_protocolo',\n",
+       "   'examples': ['Como gerar Protocolo Web para procuração',\n",
+       "    'Como proceder com Pedido de Reconsideração',\n",
+       "    'Como acessar o protocolo web com assinatura digital',\n",
+       "    'Como proceder para gerar o protocolo web de consórcio com 2 pessoas jurídicas somente',\n",
+       "    'Preciso gerar o protocolo web de Instrumentos de Escrituração Mercantil',\n",
+       "    'Como gerar Protocolo Web para Cooperativa de Catadores',\n",
+       "    'Preciso gerar Protocolo web de inscrição de transferência para o RJ',\n",
+       "    'Como gerar o protocolo web sem assinatura digital',\n",
+       "    'Como criar protocolo digital?',\n",
+       "    'Quero criar o protocolo digital',\n",
+       "    'Gostaria de gerar Protocolo Web de catadores.',\n",
+       "    'Qual o tipo de procuração para abertura de empresa?',\n",
+       "    'Quero pedir nova análise da exigência',\n",
+       "    'Quero pedir reavaliação da exigência.',\n",
+       "    'Como protocolar um livro?',\n",
+       "    'Como registrar inscrição de transferência para o RJ']},\n",
+       "  {'intent': 'valor',\n",
+       "   'examples': ['Existe gratuidade no pedido de certidão?',\n",
+       "    'O que é preciso para realizar a gratuidade da certidão?',\n",
+       "    'Como solicitar gratuidade no pedido de certidão',\n",
+       "    'Como verifico valores de ato e evento no protocolo web',\n",
+       "    'Preciso pagar por uma certidão?',\n",
+       "    'Qual o valor da taxa?',\n",
+       "    'Posso pedir uma gratuidade referente ao pedido da certidão online?',\n",
+       "    'Certidão online é pago?']},\n",
+       "  {'intent': 'Institutional_About',\n",
+       "   'examples': ['Como funciona a JUCERJA',\n",
+       "    'A JUCERJA é uma organização pública?',\n",
+       "    'a JUCERJA é uma Organização pública ou privada?',\n",
+       "    'onde a JUCERJA atua?',\n",
+       "    'Qual a razão de ser da JUCERJA?',\n",
+       "    'Quando a JUCERJA foi criada',\n",
+       "    'O que é a JUCERJA',\n",
+       "    'o que a JUCERJA faz',\n",
+       "    'O que significa a sigla JUCERJA']},\n",
+       "  {'intent': 'General_Negative_Feedback',\n",
+       "   'examples': ['Você está me entediando.',\n",
+       "    'você é muito burra',\n",
+       "    'Você está fora de si?',\n",
+       "    'Tchau, vagabunda.',\n",
+       "    'Porra, como posso falar com uma pessoa real?',\n",
+       "    'Sua mãe.',\n",
+       "    'Você é chato?',\n",
+       "    'Você é burro.',\n",
+       "    'Você é espertinho?',\n",
+       "    'Todo mundo te odeia.',\n",
+       "    'Você não vale nada.',\n",
+       "    'Seja bom uma vez na vida.',\n",
+       "    'Uma experiência horrível, com certeza!',\n",
+       "    'Você é ruim mesmo?',\n",
+       "    'Vá para o inferno!',\n",
+       "    'Que merda.',\n",
+       "    'você é muito chata',\n",
+       "    'Por que você é retardado?',\n",
+       "    'Você é uma piada?',\n",
+       "    'Vá se foder!',\n",
+       "    'Vá para a puta que pariu!']},\n",
+       "  {'intent': 'Bot_Capabilities',\n",
+       "   'examples': ['vc sabe falar do que',\n",
+       "    'em que você pode me ajudar',\n",
+       "    'do que você sabe falar',\n",
+       "    'Você pode responder uma pergunta frequente sobre o agente?',\n",
+       "    'Eu gostaria de saber como você pode me ajudar',\n",
+       "    'Preciso de ajuda geral sobre o agente virtual',\n",
+       "    'o que voce sabe fazer',\n",
+       "    'que tipo de perguntas posso fazer?',\n",
+       "    'Você pode resolver um caso jurídico se eu lhe der os fatos?',\n",
+       "    'você sabe falar do que',\n",
+       "    'Qual ajuda você pode fornecer?',\n",
+       "    'você sabe falar sobre o que',\n",
+       "    'O que você pode fazer para me ajudar',\n",
+       "    'Você fornece ajuda geral? Eu não sei o que eu posso te perguntar',\n",
+       "    'vc sabe falar sobre o que',\n",
+       "    'Eu estou tendo alguns problemas e gostaria de alguma informação sobre como obter alguma ajuda',\n",
+       "    'Posso te fazer uma pergunta?',\n",
+       "    'sobre o que você quer falar',\n",
+       "    'sobre o que você sabe falar',\n",
+       "    'Eu preciso de ajuda, alguém pode me ajudar?',\n",
+       "    'Quero saber com que você pode me ajudar./Quero saber com que coisas você pode me ajudar.']},\n",
+       "  {'intent': 'dúvida-preenchimento',\n",
+       "   'examples': ['Como faço para atualizar a quantidade de quotas',\n",
+       "    'Na busca da empresa',\n",
+       "    'Como proceder quando aparece a seguinte mensagem CPF consta na lista de pessoas da empresa no protocolo web',\n",
+       "    'O que devo informar no campo exercício',\n",
+       "    'O que informar no campo assinatura do ato',\n",
+       "    'Quero mudar a quantidade de quotas?',\n",
+       "    'A quantidade de cotas é passivel de atualização?']},\n",
+       "  {'intent': 'OutOfScope_Sports',\n",
+       "   'examples': ['campeonato carioca',\n",
+       "    'e sobre o vasco',\n",
+       "    'vollei',\n",
+       "    'bola',\n",
+       "    'campeão carioca',\n",
+       "    'vai ganhar',\n",
+       "    'pra que time voce torce',\n",
+       "    'voleiball',\n",
+       "    'e sobre o flamengo',\n",
+       "    'futebol',\n",
+       "    'volei',\n",
+       "    'basquete',\n",
+       "    'que time você torce',\n",
+       "    'copa do brasil',\n",
+       "    'campeonato brasileiro',\n",
+       "    'que time vc torce',\n",
+       "    'libertadores']},\n",
+       "  {'intent': 'exigência',\n",
+       "   'examples': ['É possível realizar o cumprimento da exigência Código do Ato errato no preenchimento online?',\n",
+       "    'Como verifico pendência do protocolo?',\n",
+       "    'Como proceder quando o protocolo web foi gerado em Outros e está em exigência solicitando alterar o tipo de ato e evento?',\n",
+       "    'Gerei o protocolo web como ata e o julgador solicita correção para alteração.',\n",
+       "    'Como faço para alterar protocolo de outros para alteração?',\n",
+       "    'estou querendo cumprir uma exigencia',\n",
+       "    'como entrar no protocolo para resolver a exigência',\n",
+       "    'Meu certificado de aprovação do Corpo de BOmbeiros foi emitido, porém existem dados incorretos.',\n",
+       "    'como cumprir as exigencias',\n",
+       "    'Como faço para resolver uma exigência no protocolo?',\n",
+       "    'o que fazer quando um processo cai em exigencia?',\n",
+       "    'Meu processo está em exigência, o que devo fazer?',\n",
+       "    'Como proceder quando o protocolo web foi gerado em Outros e está em exigência para ser em alteração',\n",
+       "    'Como verifico a exigência do processo',\n",
+       "    'Como cumprir a exigência Código do ato errado no preenchimento online',\n",
+       "    'Como faço para consultar a FIT?']},\n",
+       "  {'intent': 'General_Positive_Feedback',\n",
+       "   'examples': ['Você me deu exatamente o que eu precisava.',\n",
+       "    'Você é legal.',\n",
+       "    'É muito louco o que um robô pode fazer.',\n",
+       "    'Você é adorável.',\n",
+       "    'Muito inteligente.',\n",
+       "    'Gostei muito do seu trabalho.',\n",
+       "    'Muito bom, obrigado.',\n",
+       "    'Espero trabalhar com você novamente.',\n",
+       "    'Estou impressionado com você.',\n",
+       "    'Incrível como você é bom!',\n",
+       "    'Você é demais.',\n",
+       "    'Isso é divertido.',\n",
+       "    'Isso é muito legal.',\n",
+       "    'Eu gostei do que você fez aí.',\n",
+       "    'Ótimo!',\n",
+       "    'show',\n",
+       "    'Você é o cara.',\n",
+       "    'Genial! Isso é exatamente o que eu pensei.',\n",
+       "    'Você detonou.',\n",
+       "    'Você é inteligente.',\n",
+       "    'Estou pegando a manha disso.',\n",
+       "    'Muito obrigado.']},\n",
+       "  {'intent': 'Institutional',\n",
+       "   'examples': ['Existem processos organizacionais na empresa?',\n",
+       "    'Mais informações institucionais',\n",
+       "    'Preciso encontrar informações',\n",
+       "    'Me fale mais sobre a JUCERJA',\n",
+       "    'Como a JUCERJA se organiza?',\n",
+       "    'Como é a organização da JUCERJA?',\n",
+       "    'Secretarias da empresa',\n",
+       "    'Queria saber mais detalhes sobre a JUCERJA',\n",
+       "    'institucional',\n",
+       "    'Onde encontro informações sobre',\n",
+       "    'Qual a estrutura organizacional da JUCERJA',\n",
+       "    'quero encontrar informações',\n",
+       "    'Me fale quais são as legislações e normas da JUCERJA',\n",
+       "    'Me fale sobre as normas da JUCERJA',\n",
+       "    'Vocês tem secretarias específicas?',\n",
+       "    'Qual a estrutura da JUCERJA']},\n",
+       "  {'intent': 'General_Connect_to_Agent',\n",
+       "   'examples': ['Bem agora eu gostaria de falar com um agente sobre algumas cobranças',\n",
+       "    'Eu quero contatar um agente/Eu quero entrar em contato com um agente',\n",
+       "    'Por favor me conectar a um agente humano que é fluente em português.',\n",
+       "    'Você pode me enviar um número de telefone para falar com um representante de vendas?',\n",
+       "    'Você pode por favor me transferir para alguém que possa me ajudar, eu mandei um e-mail para você e você não leu direito e simplesmente saiu.',\n",
+       "    'Pode me provar que é um representante?',\n",
+       "    'Posso ter informações de contato para falar com um agente ao vivo.',\n",
+       "    'Existe alguém com quem eu posso realmente falar de verdade?',\n",
+       "    'Eu vou falar com um agente/ Eu vou falar com um agente de suporte.',\n",
+       "    'Eu preciso falar com um representante. Como posso fazer isso?',\n",
+       "    'Isso é muito frustrante, eu quero falar com uma pessoa de verdade real.',\n",
+       "    'Eu queria saber se você poderia me direconionar/conectar para um agente humano para que eu possa completar meu pedido?',\n",
+       "    'Quero falar com alguém de outra área.',\n",
+       "    'Você pode me conectar com uma pessoa real?',\n",
+       "    'Ok deixe-me tentar outra vez. Eu estou tentando falar com um ser humano para resolver diversos problemas faz tempão',\n",
+       "    'Por favor, você pode entrar em contato comigo com um agente humano?',\n",
+       "    'Preciso contatar a um atendente']},\n",
+       "  {'intent': 'extinção',\n",
+       "   'examples': ['Baixar um mei, como faço?',\n",
+       "    'Preciso entregar o distrato de uma empresa que já encontra-se baixada na Receita Federal, não é possível fazer o DBE por que a empresa encontra-se baixada. Como devo proceder para entrega da documentação na JUCERJA sem o DBE',\n",
+       "    'Não tenho CNPJ, como baixar a empresa',\n",
+       "    'Preciso entregar o distrato de uma empresa que já encontra-se baixada na Receita Federal',\n",
+       "    'Não tenho CNPJ',\n",
+       "    'Como faço para baixar o meu alvará',\n",
+       "    'Como dar baixa no MEI',\n",
+       "    'Como cancelar meu MEI',\n",
+       "    'quero fazer o distrato de uma empresa baixada então estou sem dbe',\n",
+       "    'Como realizar a baixa do alvará']},\n",
+       "  {'intent': 'Location',\n",
+       "   'examples': ['onde é a jucerja',\n",
+       "    'a sede da minha empresa fica em Petrópolis, em quais locais posso ser atendido?',\n",
+       "    'Horário de atendimento',\n",
+       "    'Quero saber sobre atendimento',\n",
+       "    'Atendimento',\n",
+       "    'Qual o local de atendimento em Volta Redonda',\n",
+       "    'onde posso ser atendido se minha empresa fica em riodazostra?',\n",
+       "    'a matriz da minha empresa fica em Bom Jesus, onde posso ser atendido?',\n",
+       "    'qual o endereço da jucerja',\n",
+       "    'quais as cidades que tem jucerja',\n",
+       "    'localidade',\n",
+       "    'o ponto de atendimento fica próximo de onde',\n",
+       "    'onde fica a jcuerja no rio de janeiro',\n",
+       "    'Qual o ônibus pegar para chegar na jucerja',\n",
+       "    'Qual o ponto de referência da jucerja',\n",
+       "    'qual o ponto de atendimento mais próximo da minha cidade',\n",
+       "    'tem jucerja na minha cidade',\n",
+       "    'onde fica a delegacia',\n",
+       "    'tem jucerja onde?',\n",
+       "    'onde tem pontos de atendimento',\n",
+       "    'localidade da jucerja',\n",
+       "    'como chegar na jucerja',\n",
+       "    'Onde tem jucerja',\n",
+       "    'como eu chego na junta mais perto de casa',\n",
+       "    'em que localidade fica a jucerja',\n",
+       "    'Onde fica a junta',\n",
+       "    'qual a localidade',\n",
+       "    'qual a localização da junta',\n",
+       "    'qual o número da jucerja',\n",
+       "    'qual o local da jucerja',\n",
+       "    'Tem parada de ônibus próximo a jucerja']},\n",
+       "  {'intent': 'Institutional_Presidency',\n",
+       "   'examples': ['qual o nome do presidente da JUCERJA',\n",
+       "    'ceo da JUCERJA',\n",
+       "    'quem é o ceo da JUCERJA',\n",
+       "    'quem é seu diretor',\n",
+       "    'quem é o presidente da JUCERJA',\n",
+       "    'Quem é o presidente do tribunal',\n",
+       "    'qual eh o diretor da JUCERJA',\n",
+       "    'gostaria de saber informações sobre o diretor da JUCERJA',\n",
+       "    'quem e o ceo da JUCERJA',\n",
+       "    'quem e o seo da JUCERJA',\n",
+       "    'qual e o presidente da JUCERJA',\n",
+       "    'quem é o diretor da JUCERJA',\n",
+       "    'de onde é o presidente da JUCERJA',\n",
+       "    'voce sabe quem e o presidente da JUCERJA',\n",
+       "    'quem responde pelo da JUCERJA',\n",
+       "    'quem manda da JUCERJA',\n",
+       "    'quem é o seo da JUCERJA']},\n",
+       "  {'intent': 'Bot_About',\n",
+       "   'examples': ['Diga-me, você é humano ou não?',\n",
+       "    'como tu chama',\n",
+       "    'Quem é voce',\n",
+       "    'como é seu nome',\n",
+       "    'como as pessoas te chamam',\n",
+       "    'Com quem estou falando?',\n",
+       "    'Qual a sua idade?',\n",
+       "    'Você é real?',\n",
+       "    'Você é uma pessoa real ou um robô?',\n",
+       "    'Como você pode provar que é humano?',\n",
+       "    'Isso é um computador?',\n",
+       "    'Você é humano?',\n",
+       "    'quem está aí',\n",
+       "    'Me diga três coisas sobre você.',\n",
+       "    'Você é real, pelo menos?',\n",
+       "    'Você é um humano ou um robô?',\n",
+       "    'Você é um homem ou uma mulher?',\n",
+       "    'Gostaria de saber se você é real ou automática',\n",
+       "    'o que e você',\n",
+       "    'Quem é você?',\n",
+       "    'Você é um robô',\n",
+       "    'quem és tu',\n",
+       "    'quem tu és',\n",
+       "    'com quem estou falando',\n",
+       "    'Você tem um nome?',\n",
+       "    'Como você se descreve?',\n",
+       "    'Este agente foi construído usando processamento de linguagem natural?',\n",
+       "    'isso é um robo?',\n",
+       "    'qm eh vc',\n",
+       "    'Quero o documento de requisitos do sistema para esse agente.',\n",
+       "    'Quero configurar saudações aqui.',\n",
+       "    'Como eu posso conversar com o Watson?',\n",
+       "    'Quem é você, realmente?',\n",
+       "    'Quero entender como você trabalha.',\n",
+       "    'Você sabe quem você é?',\n",
+       "    'Estou conversando com um humano?',\n",
+       "    'quem é você',\n",
+       "    'Estou conversando com um robô?',\n",
+       "    'Estou conversando com uma pessoa ou com uma IA?',\n",
+       "    'Estou procurando uma solução para melhorar o meu engajamento com o cliente usando este agente virtual.',\n",
+       "    'o que é vc',\n",
+       "    'Eu estou conversando com o Watson?',\n",
+       "    'Quais são os seus apelidos?',\n",
+       "    'você é quem',\n",
+       "    'Você fala Francês?',\n",
+       "    'como tu chamas',\n",
+       "    'Eu preciso da informação sobre o preço do Watson.',\n",
+       "    'Há quanto tempo você tem desempenhado essa função?',\n",
+       "    'com quem falo',\n",
+       "    'Você é uma máquina?',\n",
+       "    'Você está disponível fisicamente ou é um chatbot?',\n",
+       "    'qual seu nome',\n",
+       "    'Você pode ser honesto comigo?']},\n",
+       "  {'intent': 'viabilidade',\n",
+       "   'examples': ['Ao consultar meu pedido no REGIN, o estado do processo aparece como “ERRO DE PROCESSAMENTO NA INSTITUIÇÃO”.',\n",
+       "    'como cancelo a viabilidade',\n",
+       "    'Como recuperar meu protocolo de viabilidade?',\n",
+       "    'Minha Viabilidade não é reconhecida para fazer o DBE',\n",
+       "    'A tela da viabilidade exibe mensagem em vermelho: “Não pode haver repetições de nome”.',\n",
+       "    'Quando o evento for de viabilidade obrigatória, somente será possível prosseguir no Coleta Nacional da Receita Federal informando uma viabilidade válida (Finalizada).',\n",
+       "    'Quando solicito novo pedido de viabilidade por ter errado o anterior não reserva a primeira opção de Nome Empresarial.',\n",
+       "    'O nome empresarial na viabilidade diverge do DBE',\n",
+       "    'Ao tentar gerar o DBE, informa que o protocolo de viabilidade não foi encontrado.',\n",
+       "    'Como recupero o número da viabilidade',\n",
+       "    'Não consigo faze viabilidade para Condominio',\n",
+       "    'a viabilidade de transformação está informando que a empresa já é transformada',\n",
+       "    'Ao tentar gerar o DBE',\n",
+       "    'ERRO DE PROCESSAMENTO NA INSTITUIÇÃO',\n",
+       "    'Na viabilidade deu Empresa transformada',\n",
+       "    'Quando preencho o DBE ele não localiza minha viabilidade',\n",
+       "    'Como revalidar uma viabilidade com o prazo expirado',\n",
+       "    'Tendo uma viabilidade com prazo expirado é possível realizar sua validação?',\n",
+       "    'O que eu faço quando preencho o DBE ele não localiza minha viabilidade?',\n",
+       "    'ERRO: Sua viabilidade não pode ser finalizada devido a seguinte pendência Alteração de Natureza Jurídica para a mesma existente no cadastro.',\n",
+       "    'Na viabilidade deu Empresa transformada, o que fazer']},\n",
+       "  {'intent': 'prazo',\n",
+       "   'examples': ['Em quanto tempo o dowload da certidão é liberado?',\n",
+       "    'Qual prazo o processo tem para ser analisado',\n",
+       "    'prazo para utilizar uma taxa paga',\n",
+       "    'Em quanto tempo após o pagamento a certidão fica disponível',\n",
+       "    'Para ter acesso a certidão online, o pagamento deve ser compensado?']},\n",
+       "  {'intent': 'OutOfScope_General',\n",
+       "   'examples': ['vamos dormir',\n",
+       "    'voce é de onde',\n",
+       "    'voce sabe falar ingles',\n",
+       "    'voce que ver um filme',\n",
+       "    'toma chimarrao',\n",
+       "    'onde voce mora',\n",
+       "    'com quantos paus se faz uma canoa',\n",
+       "    'asdhaushduasi',\n",
+       "    'quer sair comigo',\n",
+       "    'voce gosta de festas',\n",
+       "    'voce tem cachorro',\n",
+       "    'voce tem foguete',\n",
+       "    'você é colorado',\n",
+       "    'quanto é 2 + 2?',\n",
+       "    'que onibus pego para ir no tribunal',\n",
+       "    'voce é gremista',\n",
+       "    'atirei o pau no gato mas o gato',\n",
+       "    'quem criou voce',\n",
+       "    'voce gosta de refri',\n",
+       "    'que tal um chopp',\n",
+       "    'o que acha de sairmos',\n",
+       "    'te achei linda',\n",
+       "    'Qual o dia da semana',\n",
+       "    'gosta de chocolate',\n",
+       "    'voce nao dorme',\n",
+       "    'quanto tempo levo da minha casa ate o tribunal',\n",
+       "    'você é linda',\n",
+       "    'que horas são',\n",
+       "    'como ta a temperatura',\n",
+       "    'hora de trabalhar',\n",
+       "    'voce gosta de cinema',\n",
+       "    'como faço pra chegar no hotel',\n",
+       "    'gosta de chimarrao',\n",
+       "    'que casa comigo',\n",
+       "    'era uma vez uma um tutorial de bots',\n",
+       "    'quero um foguete',\n",
+       "    'que tal comer um chocolate',\n",
+       "    'blablabla',\n",
+       "    'voce conhece o tribunal',\n",
+       "    'quem é mais otario mauro ou fernandinho?',\n",
+       "    'voce pode me emprestar um foguete',\n",
+       "    'que cor e sua casa',\n",
+       "    'voce gosta de namorar',\n",
+       "    'quanto é dois mais dois',\n",
+       "    'que dia vai chover']},\n",
+       "  {'intent': 'emissão',\n",
+       "   'examples': ['Como reimprimir o boleto da JUCERJA?',\n",
+       "    'Como acessar meus boletos gerados?',\n",
+       "    'Como faço para baixar meu alvará pelo regin?',\n",
+       "    'Como baixar meu alvará no regin, meu processo já finalizou',\n",
+       "    'Como acompanhar o alvara depois do processo finalizado?',\n",
+       "    'Como obter meu alvará?',\n",
+       "    'Quais certidões posso emitir?',\n",
+       "    'Quais certidões a jucerja disponibiliza?',\n",
+       "    'Não estou conseguindo emitir a taxa de alteração de dados do MEI, como fazer?',\n",
+       "    'Consigo pedir uma certidão?',\n",
+       "    'Onde emito uma certidão online?',\n",
+       "    'Cópia de livros de registro de empregados de uma empresa',\n",
+       "    'Trabalhei em 1986 e esse tempo não consta no cadastro do inss, me informaram que posso obter cópias dos livros de registro de empregados com os senhores',\n",
+       "    'Gostaria de emitir uma guia bancária, é possível',\n",
+       "    'Preciso de uma certidão',\n",
+       "    'Não estou conseguindo emitir a taxa de alteração de dados do MEI, fiz o desenquadramento e quando fui emitir a taxa apareceu a mensagem para entrar em contato com a redesim.',\n",
+       "    'Informar objeto \"Pedido de Certidão\"',\n",
+       "    'Como realizar um pedido de certidão?',\n",
+       "    'processo finalizado, como emitir o alvará',\n",
+       "    'Como emitir guia bancária',\n",
+       "    'Quero consultar segunda via do meu boleto',\n",
+       "    'Como gerar boleto avulso',\n",
+       "    'Como emitir o pedido de certidão online',\n",
+       "    'O que fazer quando aparecer a mensagem: para entrar em contato com a redesim quando for emitido a taxa?',\n",
+       "    'É possivel fazer um pedido de certidão online?',\n",
+       "    'Como eu faço para gerar uma guia bancária?',\n",
+       "    'Qual o procedimento para realizar o pedido de certidão?',\n",
+       "    'Como pagar diferença da taxa?']},\n",
+       "  {'intent': 'Bot_Control_Reject_Response',\n",
+       "   'examples': ['Eu não disse isso.',\n",
+       "    'Você não entendeu o que eu pedi.',\n",
+       "    'Não estou entendendo.',\n",
+       "    'Eu não quero isso.',\n",
+       "    'Eu não preciso disso.',\n",
+       "    'Isso não estava correto. Esqueçamos.',\n",
+       "    'Eu não quis dizer isso.',\n",
+       "    'Você não compreendeu o que perguntei.',\n",
+       "    'Você não faz idéia.',\n",
+       "    'Essa não foi a minha intenção.',\n",
+       "    'Essa parece ser a resposta errada.',\n",
+       "    'Eu não falei sobre isso.',\n",
+       "    'Eu não entendo o que você está dizendo.',\n",
+       "    'Não é isso.',\n",
+       "    'Eu não acho que essa seja a resposta.',\n",
+       "    'Você está me entendendo mal.',\n",
+       "    'Isso não é o que quero dizer.',\n",
+       "    'A resposta está incorreta.',\n",
+       "    'O que você me deu não é o que eu estava procurando.',\n",
+       "    'Isso estava errado, tente novamente.',\n",
+       "    'O que você me deu não foi exatamente o que pedi.']},\n",
+       "  {'intent': 'transformação', 'examples': []},\n",
+       "  {'intent': 'cancelamento',\n",
+       "   'examples': ['como cancelo a viabilidade',\n",
+       "    'Como posso fazer um cancelamento de um pedido de certidão?',\n",
+       "    'Como cancelar a viabilidade',\n",
+       "    'Como desistir do meu processo?',\n",
+       "    'Cancelamento de pedido de certidão',\n",
+       "    'Gostaria de cancelar o protocolo web com status novo',\n",
+       "    'Como faço para desistir do protocolo web gerado',\n",
+       "    'Como faço para realizar a desistência de protocolo',\n",
+       "    'como eu cancelo a reserva de nome',\n",
+       "    'Quero cancelar a viabilidade',\n",
+       "    'Se eu não pagar o boleto do pedido de certidão, o que acontece?',\n",
+       "    'Se eu não quiser mais o protocolo web gerado, o que eu faço?',\n",
+       "    'como eu faço para cancelar a viabilidade?',\n",
+       "    'Solicitei uma certidão, mas não paguei. O que faço?',\n",
+       "    'Um pedido de certidão, pode ser cancelado?',\n",
+       "    'Quero desistir do protocolo',\n",
+       "    'Não estou conseguindo finalizar o protocolo web',\n",
+       "    'Como é possível cancelar a viabilidade?',\n",
+       "    'A viabilidade pode ser cancelada?',\n",
+       "    'De que forma pode-se cancelar a viabilidade?',\n",
+       "    'Como é possível cancelar a reserva de nome?']},\n",
+       "  {'intent': 'renovação', 'examples': []},\n",
+       "  {'intent': 'legalização',\n",
+       "   'examples': ['estou tentando dar entrada em legalização de inscrição bombeiro militar e está aparecendo a seguinte mensagem: empresa extinta.',\n",
+       "    'Solicitei uma legalização da inscrição do corpo de bombeiros, quanto tempo demora pra aprovar',\n",
+       "    'como solicitar meu alvará no Rio de Janeiro?',\n",
+       "    'Estou fazendo o cadastro para a legalização municipal mas aparece a mensagem de q o NIRE n existe.',\n",
+       "    'O que acontece quando aparecer a mensagem: Nire não existe?',\n",
+       "    'Solicitei uma legalização da inscrição do corpo de bombeiros',\n",
+       "    'Como solicitar legalização municipal no municipio do RJ',\n",
+       "    'Preciso emitir meu certificado do corpo de bombeiros',\n",
+       "    'Tento fazer legalização dos bombeiros e informa que a empresa está extinta',\n",
+       "    'Como faço para solicitar minha legalização junto ao Corpo de Bombeiros']},\n",
+       "  {'intent': 'OutOfScope_Jokes',\n",
+       "   'examples': ['Você gosta de contar piadas?',\n",
+       "    'Conte outra!',\n",
+       "    'Você tem senso de humor?',\n",
+       "    'Eu não sou tedioso, você é.',\n",
+       "    'Você pode cantar para mim?',\n",
+       "    'Você tem quaisquer jogos?',\n",
+       "    'Está se divertindo?',\n",
+       "    'Qual a sua piada favorita?',\n",
+       "    'O que você faz para se divertir?',\n",
+       "    'Porque você é enfadonho?',\n",
+       "    'Vamos nos divertir!',\n",
+       "    'Você sabe piadas?',\n",
+       "    'Estou entediado.',\n",
+       "    'Você me entediou.',\n",
+       "    'quero ouvir uma piada',\n",
+       "    'Surpreenda-me com algo hilariante.',\n",
+       "    'Me conte mais uma.',\n",
+       "    'Você pode me contar uma piada?',\n",
+       "    'Estou entediado. Entretenha-me!']},\n",
+       "  {'intent': 'General_Greetings',\n",
+       "   'examples': ['quale mano',\n",
+       "    'Boa tarde',\n",
+       "    'Bom dia, como você está?',\n",
+       "    'Obrigado só pensei de dar um oi como seu nome apareceu',\n",
+       "    'Meu querido amigo que prazer é falar com você se você pudesse imaginar',\n",
+       "    'Olá, tudo bem?',\n",
+       "    'boanoite',\n",
+       "    'Boa tarde , você está ai?',\n",
+       "    'Boa Noite',\n",
+       "    'Como estão as coisas aí?',\n",
+       "    'start',\n",
+       "    'e aí',\n",
+       "    'Bom dia',\n",
+       "    'tenho uma dúvida',\n",
+       "    'Olá, pode me ajudar?',\n",
+       "    'Eu gostaria de conversar com o TJRO.',\n",
+       "    'tudo bem?',\n",
+       "    '/start',\n",
+       "    'Eu não pedi para falar com um agente. Eu estava falando olá/oi para você',\n",
+       "    'oi',\n",
+       "    'Ei, você está aí?',\n",
+       "    'Eu tenho algumas perguntas, por favor, deixe-me falar primeiro',\n",
+       "    'olá',\n",
+       "    'ola',\n",
+       "    'eai blz']},\n",
+       "  {'intent': 'funcionamento',\n",
+       "   'examples': ['o atendimento presencial funciona que horas?',\n",
+       "    'Qual o horário de funcionamento da jucerja',\n",
+       "    'que horas eu consigo ser atendido na jucerja',\n",
+       "    'que horas funciona o posto de atendimento',\n",
+       "    'que horas eu posso ir na jucerja',\n",
+       "    'que horas a jucerja abre',\n",
+       "    'a delegacia abre que horas',\n",
+       "    'qual o horário de funcionamento do atendimento']},\n",
+       "  {'intent': 'download',\n",
+       "   'examples': ['Em que status do protocolo web posso efetuar o download',\n",
+       "    'Quanto tempo o documento fica disponível para o primeiro download',\n",
+       "    'quero baixar o arquivo da certidão e imprimir',\n",
+       "    'Como faço o download/impressão da certidão',\n",
+       "    'Após o primeiro download, quanto tempo o documento fica disponível',\n",
+       "    'Como faço para abrir o arquivo baixado',\n",
+       "    'Existe a possíbilidade de pegar a certidão ?',\n",
+       "    'como faço para baixar uma certidão',\n",
+       "    'Não consigo visualizar o arquivo que baixei',\n",
+       "    'quero imprimir minha certidão',\n",
+       "    'Como faço o download do documento digital',\n",
+       "    'Como faço download de certidão',\n",
+       "    'como imprimo o arquivo que baixei',\n",
+       "    'Não consigo abrir o documento digital',\n",
+       "    'Como eu tenho o acesso a certidão online?',\n",
+       "    'Quando posso baixar o documento digital? \"',\n",
+       "    'Qual é o tempo de disponibilidade do Download após o primeiro ter sido feito?',\n",
+       "    'Quero baixar o processo registrado?',\n",
+       "    'Gostaria de gerar o documento digital?',\n",
+       "    'Não consigo visualizar o documento digital',\n",
+       "    'como faço impressão da certidão',\n",
+       "    'Posso pegar minha certidão na Jucerja']},\n",
+       "  {'intent': 'Bot_Control_Approve_Response',\n",
+       "   'examples': ['Você leu minha mente.',\n",
+       "    'Genial!',\n",
+       "    'Com certeza. Estou empolgado com isso.',\n",
+       "    'Você me entende.',\n",
+       "    'Afirmativo! É por isso que eu estava procurando.',\n",
+       "    'Essa é a resposta certa.',\n",
+       "    'Nós precisamos exatamente disso.',\n",
+       "    'Muito bem. Vamos fazê-lo.',\n",
+       "    'Está muito bom.',\n",
+       "    'Bom trabalho.',\n",
+       "    'Ótimo.',\n",
+       "    'Eu gostei disso.',\n",
+       "    'Isso está certo.',\n",
+       "    'Essa é a resposta apropriada.',\n",
+       "    'Essa é a resposta pela qual procurava.',\n",
+       "    'Com certeza!',\n",
+       "    'É exatamente disso que preciso.',\n",
+       "    'Ignore o que eu falei.',\n",
+       "    'É disso que preciso.']},\n",
+       "  {'intent': 'Bot_Control_Make_Contact',\n",
+       "   'examples': ['Queria receber o conteúdo de nossa conversa',\n",
+       "    'Quero receber esta conversa por email',\n",
+       "    'Me envia por email nossa conversa',\n",
+       "    'Você poderia me mandar um email?',\n",
+       "    'Me envia o histórico por favor',\n",
+       "    'Pode me enviar o chat por email?',\n",
+       "    'Histórico da conversa',\n",
+       "    'Quero receber este chat por email']},\n",
+       "  {'intent': 'Bot_Control_Change_Subject',\n",
+       "   'examples': ['Esse assunto não tem nada a ver com o que preciso.',\n",
+       "    'Não quero falar desse assunto.',\n",
+       "    'Podemos falar sobre outra coisa?',\n",
+       "    'Esse assunto é inconveniente.',\n",
+       "    'Não tenho mais o que falar sobre isso.',\n",
+       "    'Quero ajuda sobre outra coisa.',\n",
+       "    'Vamos mudar de assunto.',\n",
+       "    'Preciso de outra coisa.',\n",
+       "    'Esse assunto não tem nada a ver.',\n",
+       "    'Vamos falar de outro assunto?',\n",
+       "    'Quero lidar com outro problema.',\n",
+       "    'Vamos falar sobre outra coisa.',\n",
+       "    'Não quero falar disso.',\n",
+       "    'Quero falar de outra coisa.',\n",
+       "    'Preciso de algo totalmente diferente.',\n",
+       "    'Vamos mudar de assunto?',\n",
+       "    'Não é disso que preciso, vamos mudar de assunto.',\n",
+       "    'Sobre o que mais podemos falar?',\n",
+       "    'Esse assunto é irrelevante.']},\n",
+       "  {'intent': 'como_fazer',\n",
+       "   'examples': ['Como vejo se faço parte de uma empresa?',\n",
+       "    'Abertura de empresa',\n",
+       "    'NÃO ESTOU PROCURANDO NIRE E SIM EMPRESA EXTINTA',\n",
+       "    'Como consultar uma empresa extinta',\n",
+       "    'Gostaria de criar uma empresa.',\n",
+       "    'Abrir uma empresa é possível através da JUCERJA?',\n",
+       "    'Qual o procedimento de abertura de empresa?',\n",
+       "    'Onde preencho uma viabilidade',\n",
+       "    'Solicitação de uma viabilidade',\n",
+       "    'Como faço para baixar, paralisar ou reativar minha inscrição estadual?',\n",
+       "    'Preciso atualizar minha inscrição estadual.',\n",
+       "    'Como consultar empresa limitada com único sócio',\n",
+       "    'Como consultar um ofício',\n",
+       "    'Como consultar um CNAE',\n",
+       "    'Como realizar a reativação empresarial',\n",
+       "    'Como faço para solicitar uma viabilidade?',\n",
+       "    'Como resolver uma exigencia',\n",
+       "    'Como cumprir uma exigência?',\n",
+       "    'distrato social por falecimento',\n",
+       "    'Constituir empresa no rio de Janeiro',\n",
+       "    'Como faço para abrir uma empresa?',\n",
+       "    'Como pesquiso uma empresa apenas pelo cnpj?',\n",
+       "    'Existe contrato padrão para alteração?',\n",
+       "    'Como preencher o DBE?',\n",
+       "    'Como fazer o DBE?',\n",
+       "    'Como trocar o ato de um protocolo em exigência',\n",
+       "    'Como validar o documento?',\n",
+       "    'Como confirmar autenticidade do documento?',\n",
+       "    'quero gerar novamente a capa.',\n",
+       "    'como alterar minha sociedade da JUCERJA para o RCPJ?',\n",
+       "    'Quais os passos para renovar uma reserva de nome?',\n",
+       "    'Como quitar meu IPTU',\n",
+       "    'Qual certidão sai com todos os atos?',\n",
+       "    'De que forma pode-se renovar a reserva de nome?',\n",
+       "    'Tenho interesse em me tornar um MEI.',\n",
+       "    'Estou vinculado com alguma empresa?',\n",
+       "    'Meu CPF está em alguma empresa?',\n",
+       "    'QUal o procedimento se o sistema acusar nire não encontrado',\n",
+       "    'como eu faço um mandado',\n",
+       "    'Preciso de uma certidão de MEI',\n",
+       "    'Preciso de uma certidão que comprove que a minha empresa está inativa',\n",
+       "    'Como solicitar Certidão Negativa de Pessoa Física',\n",
+       "    'Como consigo uma certidão simplificada',\n",
+       "    'com eu renovo a reserva de nome',\n",
+       "    'Quero uma ajuda para fazer a dbe de uma empresa . o sistema esta todo mudado. a DBE É DE INSCRIÇÃO DE PRIMEIRO ESTABELECIMENTO',\n",
+       "    'NIRE inexistente, como resolver',\n",
+       "    'como consigo uma certidão de inteiro teor',\n",
+       "    'como faço para obter a certidão de inteiro teor',\n",
+       "    'quero emitir certidão com breve relato',\n",
+       "    'Por que não consigo gerar o contrato padrão',\n",
+       "    'como acessar a consulta optante',\n",
+       "    'Certidão com histórico de todos os atos (breve relato).',\n",
+       "    'Preciso fazer uma reclamação de registro',\n",
+       "    'Sociedade advocatícia precisa registrar na Junta',\n",
+       "    'como peço uma certidão de inteiro teor',\n",
+       "    'Por que eu não tenho a possibilidade de emitir o contrato padrão?',\n",
+       "    'Não estou conseguindo gerar o contrato padrao. O que eu devo fazer?',\n",
+       "    'Como realizar uma nova geração de capa do processo?',\n",
+       "    'Caso haja um extravio do protocolo, o que eu faço?',\n",
+       "    'Se por acaso eu perder o protocolo, o que eu faço?',\n",
+       "    'É viável a Jucerja emitir uma certidão de breve relato?',\n",
+       "    'Qual certidão que fornece a data de inatividade?',\n",
+       "    'Sendo MEI, como é o procedimento para solicitar uma certidão de Inteiro Teor?',\n",
+       "    'Um certidão de Inteiro Teor é possível ser solicitada para quem é MEI?',\n",
+       "    'Como verifico a chancela digital no protocolo web',\n",
+       "    'Como faço para gerar novamente a capa do processo',\n",
+       "    'Como proceder no RCPJ',\n",
+       "    'Certidão que fornece data de inatividade pelo art. 60 lei 8934/94.',\n",
+       "    'Sou MEI como faço para solicitar Certidão de Inteiro Teor',\n",
+       "    'MEI pode ter Inscrição Estadual',\n",
+       "    'Como me torno um MEI',\n",
+       "    'Enquadrar no MEI',\n",
+       "    'É possível que um MEI tenha Inscrição Estadual?',\n",
+       "    'Existe certidão negativa para uma pessoa física?',\n",
+       "    'como obtenho o cartão de protocolo',\n",
+       "    'Como faço uma certidão simplificada',\n",
+       "    'Como faço CCMEI?',\n",
+       "    'Onde consigo um CCMEI',\n",
+       "    'como faço para acessar a consulta optante',\n",
+       "    'Quero saber se meu nome está em algum CNPJ',\n",
+       "    'No caso de perder o cartão de protocolo, como proceder',\n",
+       "    'Como gero o NIRE',\n",
+       "    'Como faço o NIRE?',\n",
+       "    'como consigo o cartão de protocolo',\n",
+       "    'como eu gero o contrato padrão?',\n",
+       "    'Como realizar o cadastro no portal da JUCERJA']},\n",
+       "  {'intent': 'contestação',\n",
+       "   'examples': ['Dúvidas e erros de dados relacionados ao Requerimento Exclusivo SEFAZ-RJ.',\n",
+       "    'Não tenho MEI mas na Jucerja informa que eu tenho',\n",
+       "    'Meu processo caiu em exigência mas não há nada a modificar no protocolo web. Como faço?',\n",
+       "    'Eu consigo emitir o protocolo web sem certificado digital?',\n",
+       "    'Onde vejo as licitações em andamento',\n",
+       "    'Onde consulto as atas da JUCERJA',\n",
+       "    'Onde vejo os pareceres da procuradoria',\n",
+       "    'Como proceder com o CNPJ',\n",
+       "    'Como utilizo o convênio CNPJ',\n",
+       "    'Onde encontro a comunicação de funcionamento',\n",
+       "    'Consultei o status do meu protocolo. O que significa?',\n",
+       "    'Onde encontro o manual SPED contábil',\n",
+       "    'Onde encontro a declaração de enquadramento de ME e EPP',\n",
+       "    'Onde imprimo o DARF',\n",
+       "    'Onde vejo a lista de leiloeiros',\n",
+       "    'Como emito a Taxa do DREI',\n",
+       "    'Quais os tipos de certificados permitidos para assinatura digital?',\n",
+       "    'Eu nunca tive um MEI sendo que a JUCERJA informa que existe um.',\n",
+       "    'Uma empresa inativa pode ser considerada extinta',\n",
+       "    'Meu processo não foi classificado como simplificado pelo Corpo de Bombeiros. O que devo fazer?',\n",
+       "    'Processos com abertura de matriz e filial concomitantemente.',\n",
+       "    'Minha empresa já funciona porém não tenho alvará. Como faço para obtê-lo?',\n",
+       "    'QUANDO SE PEDE CERTIDÃO DA EMPRESA GAMA PARK ESTACIONAMENTO EIRELI NO SITE ACUSA COMO EXTINTA. E NO SITE DE EMPRESA INATIVA NÃO HÁ RESPOSTA',\n",
+       "    'O processo 892018448917-2 caiu em exigencia pq o vogal alegou \"falta de foro\", e pediu novo ato, mas ele consta no processo. então, onde indico isso para o vogal (que o foro está no contrato) ou é so imprimir a capa e fit e dar reentrada no processo?',\n",
+       "    'meu processo caiu em exigencia por um item que consta no contrato. como dou reentrada nesse processo, já que não tenho nada para modificar ou fazer no contrato?',\n",
+       "    'Status distribuído',\n",
+       "    'Onde encontro o modelo de documento para reativação de LTDA',\n",
+       "    'Empresa extinta está inativa?',\n",
+       "    'reconhecimento de assinatura no cartório é necessário?',\n",
+       "    'Um procurador pode assinar a documentação para registro da empresa quando um sócio está ausente?',\n",
+       "    'Nire não encontrado',\n",
+       "    'Como comunico ao julgador que não consigo cumprir uma exigência?',\n",
+       "    'Onde indico para o vogal que não entendi a exigência?']},\n",
+       "  {'intent': 'enquadramento',\n",
+       "   'examples': ['Tenho uma empresa que esta enquadrada na Receita como ME',\n",
+       "    'qual empresa pode se enquadrar cmo MEI?',\n",
+       "    'O que fazer na Jucerja depois de Desenquadrar o MEI',\n",
+       "    'Não tenho o CCMEI, como posso desenquadrar na Jucerja',\n",
+       "    'Desenquadrei sem querer, tem como enquadrar novamente',\n",
+       "    'Como faço para desenquadrar um MEI',\n",
+       "    'Quando não tiver o CCMEI, como é feito desequadramento na JUCERJA?',\n",
+       "    'Tenho uma empresa que esta enquadrada na Receita como ME, porem a mesma não é enquadrada na Jucerja como ME.',\n",
+       "    'Eu tenho como enquadrar novamente no MEI se desenquadrar por engano?',\n",
+       "    'Se houver o desenquadramento  sem querer, é possível enquadrar novamente?',\n",
+       "    'Após desenquadrar o MEI, é necessário arquivar um documento com pelo menos uma alteração de nome empresarial, para que a empresa fique aderente as regras do registro mercantil.',\n",
+       "    'Não tenho CCMEI, como atualizar meus dados na Jucerja?']},\n",
+       "  {'intent': 'definição',\n",
+       "   'examples': ['O que é o DBE?',\n",
+       "    'O que significa DBE',\n",
+       "    'O que é uma certidão de breve relato',\n",
+       "    'Qual a definição de JUCERJA',\n",
+       "    'O que é micro empreendedor individual?',\n",
+       "    'O que é Consulta Optante',\n",
+       "    'O que é CCMEI?',\n",
+       "    'O que vem a ser uma Consulta Optante ?',\n",
+       "    'O que é RCPJ',\n",
+       "    'O que tem na certidão de breve relato?',\n",
+       "    'Gostaria de saber qual certidão fornece informações atualizadas da empresa?',\n",
+       "    'Certidão que forneça cópia do contrato social/ato arquivado.',\n",
+       "    'O que é CCMEI e onde consigo um',\n",
+       "    'jucerja',\n",
+       "    'O que quer dizer CCMEI?',\n",
+       "    'O que é um MEI?',\n",
+       "    'pra que serve um contrato padrão?',\n",
+       "    'O que é o contrato padrão?',\n",
+       "    'O que é chancela digital?',\n",
+       "    'Qual a definição de cartão de protocolo',\n",
+       "    'O que é o cartão de protocolo',\n",
+       "    'O quer quer dizer RCPJ',\n",
+       "    'O que é CAE',\n",
+       "    'O que é Resumo Partícula Nome Empresarial',\n",
+       "    'Onde encontro a ficha de reclamação de registro',\n",
+       "    'O que é ficha de reclamação de registro',\n",
+       "    'Como saber o cnae principal de uma empresa na jucerja',\n",
+       "    'O que significa Código do ato errado no preenchimento online',\n",
+       "    'Consulta Optante',\n",
+       "    'Como tenho acesso a uma cópia do documento fiel da empresa?',\n",
+       "    'Como emitir uma certidão com os dados da minha empresa?',\n",
+       "    'Meu cliente precisa de uma certidão contendo os dados atualizados da empresa',\n",
+       "    'Preciso de uma certidão com todas as informações da minha empresa',\n",
+       "    'Preciso de uma certidão que possa trazer as principais informações da empresa atualizadas. Com qual certidão posso obter esses dados?',\n",
+       "    'Preciso de uma certidão que possa trazer as principais informações da empresa atualizadas.',\n",
+       "    'Eu preciso de uma copia do contrato social, o que eu preciso fazer?',\n",
+       "    'Defina MEI',\n",
+       "    'Qual certidão que eu consigo emitir uma cópia reprográfica?',\n",
+       "    'Qual certidão eu consigo as informações principais da empresa de forma atualizada?',\n",
+       "    'Para que serve o NIRE',\n",
+       "    'O que significa inteiro teor',\n",
+       "    'defina certidão de inteiro teor',\n",
+       "    'O que é uma certidão de inteiro teor',\n",
+       "    'Certidão que forneça as principais informações atualizadas da empresa.',\n",
+       "    'O que é JUCERJA?',\n",
+       "    'Defina CCMEI?',\n",
+       "    'O que vem a ser um CCMEI e como eu consigo um?',\n",
+       "    'Existe uma certidão que fornece informações da empresa mais atualizada possível?',\n",
+       "    'O que é NIRE']},\n",
+       "  {'intent': 'alteração',\n",
+       "   'examples': ['O que eu preciso fazer para atualizar meu dados ?',\n",
+       "    'Estou fazendo atualizações cadastrais de duas empresas na Sefaz',\n",
+       "    'preciso fazer a viabilidade no REGIN para transferencia de uma empresa do RJ para outra UF, não vejo a opção',\n",
+       "    'Sou MEI e preciso atualizar meus dados na Jucerja',\n",
+       "    'Acabei de fazer Viabilidade ou Legalização e percebi que as informações do meu MEI estão desatualizadas',\n",
+       "    'Depois de alterar a unidade na receita e sair o DBE tem que levar os documentos na receita ou e so entra e alterar na junta comercial para fazermos outro pedido de IE',\n",
+       "    'estou transferindo uma empresa para outro Estado. Pergunto se faço o regin no site da jucerja.',\n",
+       "    'Solicito uma ajuda',\n",
+       "    'Como transformar um MEI em LTDA ou Eireli',\n",
+       "    'Minha empresa é ME, posso me tornar MEI',\n",
+       "    'Como transformar um MEI em Empresário Individual',\n",
+       "    'Estou fazendo atualizações cadastrais de duas empresas na Sefaz, mas o sistema deu a seguinte informação: pendência de validação - procure o órgão de registro',\n",
+       "    'O cadastro da minha empresa foi corrigido, como corrigir o protocolo web agora',\n",
+       "    'Qual ato e evento utilizo para registrar uma alteração sem DBE',\n",
+       "    'Os dados corrigidos são repassados aos órgãos integrados a Jucerja',\n",
+       "    'Solicito uma ajuda, estou alterando o nome fantasia de uma empresa e qual seria o tipo de protocolo que tenho que fazer.',\n",
+       "    'Como modificar a unidade',\n",
+       "    'Preciso atualizar os dados do meu Certificado de Aprovaçao CBMERJ',\n",
+       "    'Como Alterar o tipo de unidade',\n",
+       "    'Pessoa sendo alterada no DBE sem registro na Junta',\n",
+       "    'COMO PROCEDER QUANDO O PORTE EMPRESARIAL DA EMPRESA ESTIVER DIFERENTE ENTRE JUCERJA E RECEITA FEDERAL',\n",
+       "    'preciso fazer a viabilidade no REGIN para transferencia de uma empresa do RJ para outra UF',\n",
+       "    'Desejo corrigir o protocolo web, como eu posso fazer?',\n",
+       "    'Quero mudar o MEI para LTDA ou Eireli, eu consigo?',\n",
+       "    'Eu consigo mudar o MEI para LDTA ou EIRELI?',\n",
+       "    'MEI desatualizado na legalização',\n",
+       "    'Quero transformar meu MEI numa EIRELI',\n",
+       "    'tenho um sócio que está na jucerja e não está no cnpj',\n",
+       "    'Sou MEI e quero virar LTDA',\n",
+       "    'Como consigo corrigir os dados incorretos da minha empresa',\n",
+       "    'Minha empresa está com os dados errados, como atualizo?',\n",
+       "    'Tenho uma empresa que é ME e quero ser MEI',\n",
+       "    'DE que maneiro eu corrijo os dados da minha empresa?',\n",
+       "    'Existe uma forma de consertar os dados da minha empresa?',\n",
+       "    'O que deve ser utilizado para registrar uma alteração sem DBE?',\n",
+       "    'Como minha empresa ME pode se tornar MEI',\n",
+       "    'Não consigo reservar um nome na viabilidade para abertura de filial com sede em outra UF',\n",
+       "    'solicitei uma legalização Municipal, mas consta pendencia de validação',\n",
+       "    'Pendência de validação',\n",
+       "    'Estou transferindo a empresa para SP. Preciso de viabilidade?',\n",
+       "    'O porte na Junta esta diferente do porte na Receita.',\n",
+       "    'Quero arquivar a abertura de uma filial no Rio de Janeiro com sede em outro estado. A viabilidade não reserva o nome. Como faço?',\n",
+       "    'Alterar ato de protocolo em exigência',\n",
+       "    'Como registrar um alteração sem DBE?',\n",
+       "    'Meu cliente está com os dados da empresa desatualizados, o que eu faço?',\n",
+       "    'Depois que os dados são corrigidos na JUCERJA, os órgãos recebem essas informações?',\n",
+       "    'Quero transformar meu MEI em uma sociedade limitada',\n",
+       "    'Após correção do cadastro da minha empresa, como realizar a correção do protocolo web?',\n",
+       "    'estou abrindo uma filial no RJ com sede em outra uf. Não consigo fazer a viabilidade com o mesmo nome da sede.',\n",
+       "    'Fiz um pedido de viabilidade e meus dados de MEI não foram atualizados, o que fazer?',\n",
+       "    'Tirar 2ª via da alteração contratual',\n",
+       "    'Preciso incluir, alterar ou retirar o NOME FANTASIA de minha inscrição estadual.',\n",
+       "    'Preciso transformar um mei em um requerimento de empresario. Já preenchi o formulário, já está assinado e com reconhecimento de firma, já pedi desenquadramento na receita, o darf com código 6621 no valor de 21,00 já está impresso. AGORA PRECISO EMITIR A GUIA da jucerja e estou com dúvida dos códigos que usarei para emitir. Terei que emitir um codigo para extinção do mei e outra guia com o codigo de inicio de atividade(constituição)?',\n",
+       "    'Transformação de MEI em EI',\n",
+       "    'Tranformação de MEI em RE']}]}"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "jucerja.corpus"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Treinando uma Rede Neural"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae = Corpus(name='cedae_corpus', exist=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'intents': [{'intent': 'General_Greetings',\n",
+       "   'examples': ['Boa Noite',\n",
+       "    'Olá, pode me ajudar?',\n",
+       "    'Bom dia',\n",
+       "    'Boa tarde',\n",
+       "    'boa noite',\n",
+       "    'eai blz']},\n",
+       "  {'intent': 'vazamento',\n",
+       "   'examples': ['tenho um vazamento em casa',\n",
+       "    \"tem um vazamento na minha caixa d'água, a Cedae pode vir consertar\",\n",
+       "    'posso acionar a cedae para um vazamento dentro da minha casa',\n",
+       "    'Gostaria de reportar um vazamento',\n",
+       "    'Estourou um cano aqui na rua perto de casa',\n",
+       "    'está vazando o esgoto',\n",
+       "    'muita água vazando aqui em casa',\n",
+       "    'o vazamento',\n",
+       "    'cano está vazando']},\n",
+       "  {'intent': 'minha_conta',\n",
+       "   'examples': ['gostaria de emitir segunda via de boleto.',\n",
+       "    'quero incluir uma entidade sem fins lucrativos',\n",
+       "    'entidade sem fins lucrativos',\n",
+       "    'gostaria de saber como consigo me aderir à tarifa social.',\n",
+       "    'tarifa social',\n",
+       "    'preciso mudar o dia de pagamento',\n",
+       "    'fizeram uma cobrança indevida',\n",
+       "    'me cobraram a mais',\n",
+       "    'preciso parcelar meu boleto de pagamento',\n",
+       "    'como faço para parcelar o pagamento da minha conta?',\n",
+       "    'quero ver os boletos que já paguei',\n",
+       "    'quero meu histórico de pagamento',\n",
+       "    'quero ver as contas que paguei',\n",
+       "    'quero a restituição do valor que paguei',\n",
+       "    'quero meu dinheiro de volta',\n",
+       "    'alterar dia do pagamento',\n",
+       "    'auterar data de pagamento da conta',\n",
+       "    'quero alterar data de pagamento do boleto',\n",
+       "    '2ª via de boleto',\n",
+       "    'quero gerar segunda via de conta']}]}"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.corpus"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "35 documents\n",
+      "3 classes ['General_Greetings', 'minha_conta', 'vazamento']\n",
+      "91 unique stemmed words [',', '.', '2ª', 'a', 'acion', 'ader', 'ajud', 'alter', 'aqu', 'as', 'auter', 'blz', 'boa', 'bolet', 'bom', 'caix', 'can', 'cas', 'ceda', 'cobr', 'cobranç', 'com', 'consert', 'consig', 'cont', \"d'águ\", 'da', 'dat', 'de', 'dentr', 'dia', 'dinh', 'do', 'eai', 'em', 'emit', 'entidad', 'esgot', 'est', 'estour', 'faç', 'fim', 'fiz', 'ger', 'gost', 'histór', 'inclu', 'indev', 'já', 'lucr', 'mais', 'me', 'meu', 'minh', 'mud', 'muit', 'na', 'noit', 'o', 'olá', 'os', 'pag', 'par', 'parcel', 'pert', 'pod', 'poss', 'precis', 'que', 'quer', 'report', 'restitu', 'rua', 'sab', 'segund', 'sem', 'soc', 'tard', 'tarif', 'tem', 'tenh', 'um', 'uma', 'val', 'vaz', 'ver', 'via', 'vir', 'volt', 'à', 'águ']\n"
+     ]
+    }
+   ],
+   "source": [
+    "cedae.stemmer()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['General_Greetings', 'minha_conta', 'vazamento']"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.create_trainingData()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0, 0, 0, ..., 0, 0, 0],\n",
+       "       [0, 0, 0, ..., 0, 0, 0],\n",
+       "       [0, 0, 0, ..., 0, 0, 0],\n",
+       "       ...,\n",
+       "       [0, 0, 0, ..., 0, 0, 0],\n",
+       "       [0, 0, 0, ..., 0, 0, 0],\n",
+       "       [0, 0, 0, ..., 0, 0, 0]])"
+      ]
+     },
+     "execution_count": 64,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.X_train"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0, 1, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 0, 1],\n",
+       "       [0, 1, 0],\n",
+       "       [0, 1, 0],\n",
+       "       [1, 0, 0],\n",
+       "       [0, 1, 0]])"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.Y_train"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.create_ANN_model();"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "_________________________________________________________________\n",
+      "Layer (type)                 Output Shape              Param #   \n",
+      "=================================================================\n",
+      "input_layer (Dense)          (None, 10)                920       \n",
+      "_________________________________________________________________\n",
+      "layer_2 (Dense)              (None, 10)                110       \n",
+      "_________________________________________________________________\n",
+      "layer_3 (Dense)              (None, 8)                 88        \n",
+      "_________________________________________________________________\n",
+      "output_layer (Dense)         (None, 3)                 27        \n",
+      "=================================================================\n",
+      "Total params: 1,145\n",
+      "Trainable params: 1,145\n",
+      "Non-trainable params: 0\n",
+      "_________________________________________________________________\n"
+     ]
+    }
+   ],
+   "source": [
+    "cedae.model.summary()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "W0902 16:11:57.462378 140263941257024 deprecation.py:323] From /home/cloves/.local/lib/python3.6/site-packages/tensorflow/python/ops/math_grad.py:1250: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.\n",
+      "Instructions for updating:\n",
+      "Use tf.where in 2.0, which has the same broadcast rule as np.where\n",
+      "W0902 16:11:57.547598 140263941257024 deprecation_wrapper.py:119] From /home/cloves/.local/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "history = cedae.model.fit(cedae.X_train, cedae.Y_train, \n",
+    "                         epochs=100, \n",
+    "                         verbose=False, \n",
+    "                         batch_size=10, \n",
+    "                         validation_split=0.2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "image/png": "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l18OZtGiYLZujeX++zMYPTqDwEDpLuHNnNHRnJwzh8xBgwh78knCp04laMUKTs6eTV7Llu4Or0wK5iblpSJyk8jIyCK3U5bc5LfffqNhw4bFxnShuckpaWlpnDx5khtuuAGA/v37c//99wPQoEEDRo8eTZcuXejSpQtgNu49+eST9O3bl65du556dPJ5kxbhQjp37sz27dvZvXs32dnZNGnSBID333+f48ePs27dOjZt2kR0dDS5RTz5qCR///336VsJmzdvpkOHDue1nVP8Ckww7+Pjg8PhOKvMY489xj333MOWLVuYNWvWBe2vKsLsNRAAACAASURBVNu925e8PJnbVwh38feHsWMz+Pzzo3Tpks2CBSHcdFMs770XgLN0XfaFB7M3asRxXef4q6+icnOJvvVWwh59FJUhXctKUpbcJKeYR46fS1G5yfls55TS5CalsXLlSgYPHszu3bvp1q0bdrudBx54gDlz5pCTk0OfPn3Yv3//eccJHtwiXPDbkdVqPf1c64oWFBTEjTfeyIQJE+jTp8/p9enp6URHR+Pr68tXX33FwYMHz7mdli1b8uGHH9KmTRt+/fVXfvnll9PbCQgIIDQ0lGPHjrFt2zbatGkDQHBwMBkZGWd9k2vZsiXjx49n9OjRGIbB+vXrWbhwYanrlJaWRlxcHADvvPPO6fVt27ZlxYoVTHcd69TUVJo1a8YjjzzC33//TZ06dUhJSak2rcI7d5r9IWQ2ByHc66KLnLzwQiqDB2fx+OOhPPBABCtWBDF9+kmaNpVb6l5NKXI7deJY69aEzJpF0PLl+K9bR/rEiWTdfjtYPTYtASix5baiuCM3OdVCW1G5ySmhoaGEhYWxY8cOWrZsyXvvvUerVq1wOp0kJSXRunVrWrRowUcffURmZiaHDx+mQYMGNGjQgP/7v/9j//79XHHFFWXe7ynSIlyEPn36sHfv3jM+bLfeeis//vgjHTp04N133y3xoP/nP/8hMzOTdu3aMXfu3NPf3q6++moaNWpE27ZtGTVqFM2bNz/9noEDBzJw4ED69et3xrYaN25M//796d69Oz169GDAgAGnbzmUxsSJE7n//vvp0qXLGR/ksWPHcvLkSdq3b0/Hjh35+uuviYqKYvbs2dx333107NiRESNGlHo/3i4x0cYll9hLPVuEEKJiNW+ex8cfJ/PccykcPOhD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\n",
+      "text/plain": [
+       "<Figure size 864x360 with 2 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "cedae.plot_history(history)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Salvando Modelo"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[<tf.Variable 'input_layer/kernel:0' shape=(91, 10) dtype=float32_ref>,\n",
+       " <tf.Variable 'input_layer/bias:0' shape=(10,) dtype=float32_ref>,\n",
+       " <tf.Variable 'layer_2/kernel:0' shape=(10, 10) dtype=float32_ref>,\n",
+       " <tf.Variable 'layer_2/bias:0' shape=(10,) dtype=float32_ref>,\n",
+       " <tf.Variable 'layer_3/kernel:0' shape=(10, 8) dtype=float32_ref>,\n",
+       " <tf.Variable 'layer_3/bias:0' shape=(8,) dtype=float32_ref>,\n",
+       " <tf.Variable 'output_layer/kernel:0' shape=(8, 3) dtype=float32_ref>,\n",
+       " <tf.Variable 'output_layer/bias:0' shape=(3,) dtype=float32_ref>]"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.model.weights"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[array([[ 0.03109078,  0.14679904,  0.19136925,  0.12626804, -0.10319099,\n",
+       "         -0.03386515, -0.08742548, -0.20191124,  0.31076795,  0.27193403],\n",
+       "        [-0.13225144,  0.08587287,  0.18577044, -0.15762265,  0.23479576,\n",
+       "          0.2439978 ,  0.21403092, -0.14069623, -0.11709245,  0.2654026 ],\n",
+       "        [-0.21568082,  0.08986028, -0.08303668,  0.13785453, -0.00136322,\n",
+       "          0.1698308 ,  0.11224358,  0.00398749,  0.06519091,  0.39287257],\n",
+       "        [ 0.32558095,  0.11038211,  0.13151506, -0.08399609,  0.40463224,\n",
+       "          0.08383704,  0.01182229, -0.01904796,  0.14183837,  0.41854587],\n",
+       "        [ 0.24801758,  0.3143094 ,  0.02666026, -0.08033254,  0.14543726,\n",
+       "         -0.1350908 , -0.11322121, -0.02229373,  0.07005159,  0.29450944],\n",
+       "        [-0.14599156, -0.11140844,  0.00524413, -0.05970887,  0.30946028,\n",
+       "          0.20916344,  0.27699217,  0.14812592,  0.10633929,  0.00286625],\n",
+       "        [ 0.00773534,  0.24196997, -0.06952922,  0.20281228, -0.02448425,\n",
+       "          0.01395038, -0.24174452, -0.1954011 , -0.08568542, -0.23007487],\n",
+       "        [ 0.05833801, -0.07113765, -0.20650904,  0.0720984 ,  0.24390094,\n",
+       "          0.14703187, -0.02478606, -0.07856843, -0.05674683,  0.07921386],\n",
+       "        [ 0.09058511, -0.00556801, -0.2015509 , -0.21729341, -0.10793653,\n",
+       "         -0.2356071 ,  0.221067  ,  0.12255411,  0.18625559,  0.28996202],\n",
+       "        [-0.01588249, -0.16697413, -0.15189116,  0.0081557 ,  0.10848549,\n",
+       "          0.06109569,  0.11913155,  0.09803432, -0.14340284,  0.15539926],\n",
+       "        [-0.0857366 , -0.01910436,  0.08580082, -0.02844477,  0.25993156,\n",
+       "         -0.10486368,  0.02425255, -0.14533944,  0.16438979,  0.05404524],\n",
+       "        [-0.16481154,  0.19933951, -0.02122727, -0.04162151,  0.21071318,\n",
+       "         -0.09588858,  0.04693478, -0.22129233,  0.17926434, -0.22099051],\n",
+       "        [-0.13878766,  0.34961006, -0.0299772 , -0.20067975, -0.22541085,\n",
+       "          0.06864318, -0.1514044 ,  0.29793566, -0.10300479, -0.03458523],\n",
+       "        [-0.05954557,  0.12311614, -0.07910794,  0.08053444,  0.27291033,\n",
+       "          0.20488317, -0.13211219, -0.047146  ,  0.10373607,  0.27602085],\n",
+       "        [-0.19794287, -0.15685445,  0.10396108,  0.32869756, -0.22985467,\n",
+       "         -0.16035727, -0.3214935 , -0.1451331 ,  0.26687893,  0.01642052],\n",
+       "        [-0.11579743,  0.1416277 ,  0.07403802,  0.07695604,  0.22563934,\n",
+       "         -0.00212219,  0.3724339 ,  0.00255744,  0.2458905 ,  0.14295208],\n",
+       "        [-0.13443255,  0.13357787,  0.23045525, -0.02272539,  0.00186069,\n",
+       "         -0.14619692,  0.40684125,  0.02588665,  0.3465196 ,  0.33823827],\n",
+       "        [ 0.01998435,  0.3976046 , -0.15230614,  0.09449744,  0.0988519 ,\n",
+       "         -0.25108576, -0.03635242, -0.11201326,  0.28543395,  0.01965983],\n",
+       "        [ 0.28448844, -0.01464696,  0.09098452, -0.07730357, -0.17952651,\n",
+       "         -0.02145051,  0.19180189, -0.2758232 ,  0.04360541,  0.21732801],\n",
+       "        [-0.19612262,  0.12484223, -0.09133836, -0.16803722,  0.23202705,\n",
+       "          0.2454422 ,  0.13205044,  0.12630908,  0.07237975,  0.24230398],\n",
+       "        [ 0.23238307, -0.05575386, -0.09607175, -0.17952025, -0.23008811,\n",
+       "          0.3379133 ,  0.06791299, -0.11064198, -0.06753021,  0.26310995],\n",
+       "        [-0.20853607, -0.03343849, -0.26707038, -0.12868571,  0.18422873,\n",
+       "         -0.05430843, -0.17893617, -0.12439634, -0.04342387,  0.20393524],\n",
+       "        [ 0.23868796,  0.15522577, -0.07808345, -0.15495615, -0.12658763,\n",
+       "          0.01508962,  0.25736952, -0.22262126, -0.10206622, -0.09066851],\n",
+       "        [-0.14605391,  0.23557858,  0.16247307,  0.07361778, -0.02012561,\n",
+       "          0.09651462, -0.04104627, -0.19400413,  0.23225228, -0.04424275],\n",
+       "        [ 0.08481607,  0.03853007, -0.0622677 , -0.11926977,  0.24560387,\n",
+       "          0.370593  ,  0.06096351, -0.09600742,  0.09296198,  0.24174519],\n",
+       "        [-0.00741391,  0.04105762, -0.11825626, -0.0094017 , -0.00173588,\n",
+       "          0.15703702,  0.18952587, -0.09235516,  0.2000294 ,  0.24138665],\n",
+       "        [-0.06576142, -0.092606  , -0.02153552, -0.00699522, -0.06564765,\n",
+       "          0.14755888,  0.2815824 ,  0.02134962, -0.08443347,  0.14576475],\n",
+       "        [-0.13161047,  0.14322516,  0.04572682, -0.12361316,  0.24436434,\n",
+       "          0.17539357,  0.00914862, -0.10814565, -0.17419043,  0.13818575],\n",
+       "        [ 0.14200749,  0.19802032,  0.01874701, -0.19359289,  0.27016485,\n",
+       "          0.384238  ,  0.38707373,  0.03642296,  0.08666441,  0.11190853],\n",
+       "        [-0.0588525 ,  0.2899349 , -0.10802515, -0.1948188 ,  0.21767275,\n",
+       "         -0.28536704, -0.08326402,  0.09243862,  0.03496042,  0.30189604],\n",
+       "        [-0.1398528 , -0.24381603, -0.22581714,  0.40692794,  0.06351954,\n",
+       "          0.02977312,  0.10189144,  0.15698113,  0.0016257 ,  0.01768016],\n",
+       "        [-0.22421151,  0.24025074,  0.10132176,  0.04985648, -0.21842724,\n",
+       "         -0.18541254, -0.18035343, -0.12271067,  0.13867563,  0.22579467],\n",
+       "        [ 0.13534257,  0.11763699, -0.1681323 ,  0.06922513, -0.06375723,\n",
+       "          0.40657288,  0.07921075,  0.0912747 , -0.17304167,  0.02743638],\n",
+       "        [ 0.1260952 ,  0.15010074, -0.02042347,  0.13350368, -0.04970272,\n",
+       "          0.18226314,  0.14983657,  0.18593314,  0.13751665,  0.10313654],\n",
+       "        [ 0.02612057,  0.01999303,  0.17244437,  0.08166321,  0.03300656,\n",
+       "          0.19983342,  0.01982258,  0.06486554,  0.3973921 ,  0.3693316 ],\n",
+       "        [ 0.09776533,  0.07290538, -0.02586483,  0.19380374,  0.1279885 ,\n",
+       "          0.21031705, -0.02103371,  0.19274297, -0.04187591,  0.27731127],\n",
+       "        [-0.01263039, -0.18222933,  0.05347512, -0.13884254, -0.05356664,\n",
+       "          0.17719263,  0.12834944, -0.21314883, -0.13958535,  0.15788288],\n",
+       "        [ 0.00593163,  0.3018015 , -0.18505912, -0.11694466, -0.18591037,\n",
+       "         -0.14223517,  0.3598511 , -0.16477495, -0.07097393,  0.12541242],\n",
+       "        [ 0.00170037,  0.35123953, -0.06633675, -0.0393736 , -0.12028014,\n",
+       "         -0.14543863,  0.02905971, -0.10821604,  0.23106767,  0.20076711],\n",
+       "        [ 0.11751592, -0.16391745,  0.1286892 , -0.19611865,  0.06520325,\n",
+       "          0.01900977,  0.0010342 ,  0.23559445, -0.00786765,  0.15780747],\n",
+       "        [-0.17165598, -0.32323015, -0.22160548, -0.01306133, -0.07631523,\n",
+       "          0.12972951,  0.21785043, -0.17755064, -0.07813507,  0.07604032],\n",
+       "        [ 0.00117017,  0.19009832,  0.11709549, -0.10988012,  0.39142048,\n",
+       "          0.30145738,  0.29186872, -0.24268858,  0.14683834,  0.18276419],\n",
+       "        [-0.20230058, -0.11607181,  0.16892087, -0.04528649, -0.24009992,\n",
+       "          0.37243587,  0.19441321,  0.16042393,  0.03671139,  0.09833141],\n",
+       "        [ 0.17605937,  0.29759514, -0.20523766, -0.23603718,  0.3467589 ,\n",
+       "          0.02411414,  0.03812688, -0.10350199,  0.1773775 ,  0.20012048],\n",
+       "        [ 0.25348723,  0.05886742, -0.02207081,  0.1554144 ,  0.10197333,\n",
+       "         -0.05276743, -0.05118932, -0.07537646, -0.15181315,  0.2259946 ],\n",
+       "        [-0.14551575, -0.1697317 , -0.02926047, -0.18261266, -0.01939318,\n",
+       "         -0.21924311, -0.24151973,  0.06407863, -0.09224883, -0.13618523],\n",
+       "        [ 0.20001304, -0.00331401, -0.08082622,  0.1951461 ,  0.06336394,\n",
+       "          0.2560281 , -0.09258259, -0.03733563,  0.17970526,  0.25605682],\n",
+       "        [-0.1780107 ,  0.03892344, -0.11859952,  0.24157935, -0.20812796,\n",
+       "          0.3805648 ,  0.07865565, -0.21310772, -0.12094881,  0.27428573],\n",
+       "        [ 0.13186216, -0.22025953,  0.04446158,  0.16707115,  0.10955597,\n",
+       "          0.206445  ,  0.20595999, -0.15008628, -0.08916614, -0.09450939],\n",
+       "        [-0.13288677,  0.18860123,  0.09888902,  0.00248509,  0.24554697,\n",
+       "          0.4166891 ,  0.13288969,  0.10483965, -0.1057826 ,  0.16074611],\n",
+       "        [-0.2213455 ,  0.09567277, -0.24761866,  0.14030474,  0.04246923,\n",
+       "          0.2643106 ,  0.11541868, -0.05773456, -0.03092821,  0.3502164 ],\n",
+       "        [-0.1902359 , -0.23008765,  0.16809988,  0.08658499,  0.32660246,\n",
+       "          0.18165056, -0.03000221, -0.03604719, -0.21784678,  0.15233882],\n",
+       "        [-0.08999506,  0.08698375,  0.0824602 , -0.03473791,  0.05077785,\n",
+       "          0.23100525,  0.26637286,  0.15990534,  0.19494219,  0.09725555],\n",
+       "        [ 0.08886794,  0.19940381,  0.00198337, -0.07059194, -0.0834714 ,\n",
+       "          0.01167919, -0.0191431 , -0.1393603 ,  0.32508335,  0.19604518],\n",
+       "        [-0.08365437,  0.05306443,  0.21075565,  0.16979562, -0.00243808,\n",
+       "         -0.07484982,  0.11871286, -0.09091015,  0.22584745,  0.03584868],\n",
+       "        [-0.02643329, -0.05187573,  0.16040793, -0.02790192,  0.07080457,\n",
+       "         -0.23196474, -0.006802  ,  0.05649815,  0.43681642,  0.2943893 ],\n",
+       "        [ 0.2632455 ,  0.24001935, -0.18548377, -0.1786795 ,  0.13306394,\n",
+       "         -0.16695628,  0.17068082, -0.0854059 ,  0.05599137, -0.19996873],\n",
+       "        [ 0.00248574,  0.34803346, -0.08578297, -0.15234044,  0.05388414,\n",
+       "         -0.22538291,  0.02705529,  0.13257353, -0.03998933, -0.1338625 ],\n",
+       "        [-0.15703566,  0.0359612 ,  0.18723315, -0.24209051, -0.08641774,\n",
+       "          0.3153362 ,  0.34309322,  0.06389282, -0.09151839,  0.42739347],\n",
+       "        [-0.16218075, -0.18352157, -0.052844  , -0.18477356, -0.14008991,\n",
+       "         -0.0484724 , -0.04798467,  0.02129629,  0.16440412,  0.18877447],\n",
+       "        [-0.14889082,  0.05224046, -0.07068878,  0.15554766, -0.02417368,\n",
+       "          0.34781992, -0.00134535,  0.22952244,  0.05806312,  0.30138314],\n",
+       "        [-0.08726842, -0.23037812,  0.04005165, -0.27777827,  0.17230584,\n",
+       "          0.381845  ,  0.11330526, -0.14140838, -0.26209342,  0.30287015],\n",
+       "        [ 0.09745352,  0.20627871,  0.22941603,  0.16923434, -0.00182308,\n",
+       "          0.09983823, -0.14800985,  0.06251867,  0.0840757 ,  0.01979146],\n",
+       "        [ 0.09070128,  0.02195225, -0.1329764 , -0.1090526 ,  0.26157057,\n",
+       "         -0.01042975,  0.25963023, -0.01612579, -0.07342519,  0.14142466],\n",
+       "        [-0.21765275, -0.1134546 ,  0.06385675,  0.05515727,  0.0165031 ,\n",
+       "          0.10819569,  0.0293563 , -0.23131023,  0.15895033, -0.19139647],\n",
+       "        [-0.15557492,  0.13277933,  0.09478676,  0.23552547,  0.02449611,\n",
+       "          0.21224669,  0.20947133, -0.09401678, -0.13446021,  0.09376146],\n",
+       "        [ 0.12353326,  0.2446118 , -0.19473988,  0.07997259, -0.15322728,\n",
+       "          0.01654047, -0.15021044,  0.0214888 ,  0.21453081,  0.06163476],\n",
+       "        [ 0.10938539, -0.0015088 ,  0.06326921,  0.1001985 ,  0.14326197,\n",
+       "          0.08719068,  0.00882583,  0.00371994, -0.2388386 , -0.0592712 ],\n",
+       "        [-0.2511483 , -0.19230847,  0.04834252, -0.2519894 ,  0.14286001,\n",
+       "         -0.02318838,  0.23108776,  0.03737815,  0.04984972, -0.01138269],\n",
+       "        [-0.12301196,  0.09257707,  0.04108663,  0.06480022,  0.21916217,\n",
+       "          0.12630837,  0.14096269, -0.00879118, -0.08468051,  0.28819618],\n",
+       "        [ 0.3369825 ,  0.04962022, -0.23413447, -0.12882835, -0.05906957,\n",
+       "         -0.06556251,  0.40148374,  0.14488125, -0.03104339,  0.11740253],\n",
+       "        [-0.24927454, -0.18191412, -0.18474641,  0.1725496 ,  0.16969894,\n",
+       "          0.05272973,  0.17201483,  0.0146367 ,  0.03443694,  0.05131023],\n",
+       "        [-0.05083889, -0.19131449,  0.06141838,  0.09391114,  0.20252362,\n",
+       "         -0.08444248, -0.1108789 ,  0.20711845,  0.05720428, -0.23781112],\n",
+       "        [ 0.22913975,  0.17166983,  0.0045582 , -0.02520894, -0.14263104,\n",
+       "          0.3503643 , -0.13380222, -0.10119204,  0.02074704, -0.1355436 ],\n",
+       "        [-0.23209223, -0.13593297,  0.12156301, -0.04445248,  0.3116958 ,\n",
+       "          0.3135008 ,  0.05694196, -0.19887868, -0.04209808,  0.38409194],\n",
+       "        [ 0.05194968,  0.05974494, -0.20013455,  0.0283928 , -0.0236706 ,\n",
+       "          0.2824148 , -0.14817145, -0.03300308, -0.19690397, -0.03439658],\n",
+       "        [-0.11906087, -0.13897434, -0.18923657, -0.01028655,  0.10457556,\n",
+       "          0.04578502, -0.07568216,  0.18154418, -0.13442568,  0.41447893],\n",
+       "        [-0.01880138,  0.16557468, -0.09060138, -0.07067162,  0.049634  ,\n",
+       "         -0.22231069, -0.23462115, -0.2043135 , -0.12931791, -0.2162861 ],\n",
+       "        [-0.07729268, -0.11486997, -0.10067802, -0.12819996,  0.4267638 ,\n",
+       "          0.06973869,  0.06621136, -0.15510894, -0.13510619,  0.34744295],\n",
+       "        [ 0.04959716,  0.31076452,  0.08005416, -0.10802636,  0.06013501,\n",
+       "         -0.10449554,  0.21387275, -0.00702673,  0.12926538, -0.19577482],\n",
+       "        [-0.19974667,  0.03290273, -0.00257407, -0.20055723,  0.06017322,\n",
+       "          0.10358768,  0.25152487,  0.17097874,  0.15128426,  0.17262475],\n",
+       "        [ 0.02648456,  0.1821444 ,  0.02617789, -0.08580767, -0.20427403,\n",
+       "          0.14551583,  0.21043888,  0.20006995,  0.30661994,  0.14057457],\n",
+       "        [-0.17831102, -0.0164109 , -0.04065763, -0.10359633,  0.29963255,\n",
+       "          0.41334483,  0.05121642,  0.1649741 , -0.16717136,  0.06324923],\n",
+       "        [ 0.1630978 , -0.19238354, -0.22421645, -0.2293955 ,  0.1371934 ,\n",
+       "         -0.02280911, -0.04775319,  0.05278555,  0.09359315, -0.00193998],\n",
+       "        [ 0.0734705 ,  0.4459848 , -0.2270757 ,  0.01977284, -0.2047666 ,\n",
+       "          0.06286994,  0.3197315 ,  0.12019578,  0.49853435,  0.04969978],\n",
+       "        [ 0.13282529, -0.12910138,  0.09081288,  0.0480204 ,  0.29312366,\n",
+       "          0.4003644 , -0.0238147 , -0.07611175, -0.04648341, -0.07088789],\n",
+       "        [-0.15441939, -0.2866    ,  0.00696132, -0.06338982, -0.00166077,\n",
+       "          0.21328285, -0.22253428,  0.04199602, -0.15029317,  0.23171708],\n",
+       "        [ 0.09554213,  0.09823909, -0.15419134,  0.00130598, -0.18631692,\n",
+       "          0.1903216 ,  0.12521681, -0.22329655, -0.11181489, -0.16347638],\n",
+       "        [ 0.02535537,  0.06241429,  0.13355374,  0.15299994, -0.08307758,\n",
+       "          0.07834372, -0.23798104, -0.0534741 ,  0.16140103, -0.04764834],\n",
+       "        [ 0.12909088,  0.05387131, -0.10744754,  0.20242004, -0.11464059,\n",
+       "          0.21597524,  0.28150356, -0.17454901,  0.20503794,  0.27752122],\n",
+       "        [ 0.04421356,  0.3255329 ,  0.1997906 ,  0.00918755, -0.21623896,\n",
+       "         -0.05754758,  0.02348653,  0.15459748,  0.138274  ,  0.09370375]],\n",
+       "       dtype=float32),\n",
+       " array([ 0.03353756,  0.25509804, -0.08536815,  0.03862102,  0.16670585,\n",
+       "         0.15322919,  0.21773195, -0.03421356,  0.14250557,  0.2519643 ],\n",
+       "       dtype=float32)]"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# matriz dos pesos sinápticos da primiera camada\n",
+    "cedae.model.layers[0].get_weights()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cedae.model.save(\"model/modeloCEDAE.h5\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Fazendo o Load do modelo"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from keras.models import load_model\n",
+    "\n",
+    "cedae.model = load_model('model/modeloCEDAE.h5')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Entropia Cruzada"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "A função de custo que foi otimizada conforme os gráficos acima é a [Entropia Cruzada](http://deeplearningbook.com.br/entropia-cruzada-para-quantificar-a-diferenca-entre-duas-distribuicoes-de-probabilidade/).\n",
+    "\n",
+    "![alt_text](https://i2.wp.com/deeplearningbook.com.br/wp-content/uploads/2018/06/cross-entropy.png?w=625)\n",
+    "\n",
+    "Existem bons artigos que explicam tanto a formulação algébrica e intuitiva dessa função de custo. Seguem alguns artigos, na ordem necessária para entender Entropia Cruzada:\n",
+    "\n",
+    "1º [The intuition behind Shannon’s Entropy](https://towardsdatascience.com/the-intuition-behind-shannons-entropy-e74820fe9800)\n",
+    "\n",
+    "\n",
+    "2º [Perplexity Intuition (and its derivation)](https://towardsdatascience.com/perplexity-intuition-and-derivation-105dd481c8f3)\n",
+    "\n",
+    "\n",
+    "3º [Entropia Cruzada](http://deeplearningbook.com.br/entropia-cruzada-para-quantificar-a-diferenca-entre-duas-distribuicoes-de-probabilidade/)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Método de Otimização: procurando pelo mínimo global"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Para otimizar a função acima usamos um agoritimo de otimização baseado na técnica de [Gradiente Descendente](https://pt.wikipedia.org/wiki/M%C3%A9todo_do_gradiente) chamado *Adam*.\n",
+    "\n",
+    "* [An overview of gradient descent optimization algorithms](https://arxiv.org/pdf/1609.04747.pdf)\n",
+    "* [Can you explain basic intuition behind ADAM: a method for stochastic optimization?](https://www.quora.com/Can-you-explain-basic-intuition-behind-ADAM-a-method-for-stochastic-optimization)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![alt_text](https://miro.medium.com/max/513/1*RAQ9r49O26-ODWacg75ZPA.gif)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Backpropagation\n",
+    "\n",
+    "É o método utilizado para atualizar os pesos sinápticos. Dado uma função de erro qualquer $E$, queremos obter as derivadas parciais em relação a cada peso sináptico do neurônio $h$ na camada $k$, ou seja,  $h^{}_k$:\n",
+    "\n",
+    "<img src='img/18.png'>\n",
+    "\n",
+    "Isso é importante para entender como e o porquê o algoritmo funciona. Na verdade, não há muita matemática envolvida, exceto alguma álgebra um pouco bagunçada. \n",
+    "\n",
+    "Só existem apenas três coisas que você realmente precisa conhecer:\n",
+    "\n",
+    "* Derivada (em relação a x) de $\\frac{x^2}{2}$. \n",
+    "\n",
+    "* A regra da cadeia $\\frac{dy}{dx}=\\frac{\\partial y}{\\partial u}\\frac{du}{dx}+\\frac{\\partial y}{\\partial v}\\frac{dv}{dx}$\n",
+    "\n",
+    "* E igualar $\\frac{dy}{dx}=0$ para fins de otimização.\n",
+    "\n",
+    "Com essas três coisas claras na mente, basta seguir a álgebra e você ficará bem. \n",
+    "\n",
+    "Exitem bons materias para ajudar trabalhar essa derivada parcial seguindo etapas simples.\n",
+    "Seguem alguns exemplos:\n",
+    "\n",
+    "* [Backpropagation](https://brilliant.org/wiki/backpropagation/): artigo do Brilliant, o site e aplicativo são pagos mas vale muito apena pela didática e recursos do site.\n",
+    "\n",
+    "* [MACHINE LEARNING: An Algorithmic Perspective pg. 101-106](https://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition-ebook/dp/B00OGLE56Y): uma rápida pesquisa no google você poderá encontrar o pdf do livro. \n",
+    "\n",
+    "* [What is backpropagation really doing?](https://www.youtube.com/watch?v=Ilg3gGewQ5U): Vídeo ensinando a intuição por trás do algoritimo.\n",
+    "\n",
+    "* [Backpropagation calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8): Vídeo didático deduzindo a fórmula de Backpropagation."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Testando o Modelo"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'intents': [{'intent': 'General_Greetings',\n",
+       "   'examples': ['Boa Noite',\n",
+       "    'Olá, pode me ajudar?',\n",
+       "    'Bom dia',\n",
+       "    'Boa tarde',\n",
+       "    'boa noite',\n",
+       "    'eai blz']},\n",
+       "  {'intent': 'vazamento',\n",
+       "   'examples': ['tenho um vazamento em casa',\n",
+       "    \"tem um vazamento na minha caixa d'água, a Cedae pode vir consertar\",\n",
+       "    'posso acionar a cedae para um vazamento dentro da minha casa',\n",
+       "    'Gostaria de reportar um vazamento',\n",
+       "    'Estourou um cano aqui na rua perto de casa',\n",
+       "    'está vazando o esgoto',\n",
+       "    'muita água vazando aqui em casa',\n",
+       "    'o vazamento',\n",
+       "    'cano está vazando']},\n",
+       "  {'intent': 'minha_conta',\n",
+       "   'examples': ['gostaria de emitir segunda via de boleto.',\n",
+       "    'quero incluir uma entidade sem fins lucrativos',\n",
+       "    'entidade sem fins lucrativos',\n",
+       "    'gostaria de saber como consigo me aderir à tarifa social.',\n",
+       "    'tarifa social',\n",
+       "    'preciso mudar o dia de pagamento',\n",
+       "    'fizeram uma cobrança indevida',\n",
+       "    'me cobraram a mais',\n",
+       "    'preciso parcelar meu boleto de pagamento',\n",
+       "    'como faço para parcelar o pagamento da minha conta?',\n",
+       "    'quero ver os boletos que já paguei',\n",
+       "    'quero meu histórico de pagamento',\n",
+       "    'quero ver as contas que paguei',\n",
+       "    'quero a restituição do valor que paguei',\n",
+       "    'quero meu dinheiro de volta',\n",
+       "    'alterar dia do pagamento',\n",
+       "    'auterar data de pagamento da conta',\n",
+       "    'quero alterar data de pagamento do boleto',\n",
+       "    '2ª via de boleto',\n",
+       "    'quero gerar segunda via de conta']}]}"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.corpus"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('vazamento', 0.9427831)]"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence('Estou com um vazamento aqui em casa')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('General_Greetings', 0.61090535), ('vazamento', 0.30656046)]"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence('Olá bom dia')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('vazamento', 0.7871007)]"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence('Ontem estava passando na rua do ouvidor e ví muita água na rua vazando')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('vazamento', 0.8648885)]"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence('Olá, bom dia, quero reportar um vazamento')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('minha_conta', 0.9952938)]"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence(\"Gostaria de mudar o dia de pagamento do meu boleto\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('minha_conta', 0.8503817)]"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence(\"Vocês podem me devolver o dinheiro?\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('minha_conta', 0.93878937)]"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence(\"Preciso emitir minha 2º via da conta de água\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('vazamento', 0.92992544)]"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cedae.classify_sentence(\"Uma manga caiu em cima de um cano no quintal de casa e começou a vazar muito\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Reconhecendo Entidades"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[EDS, CEDAE]\n"
+     ]
+    }
+   ],
+   "source": [
+    "from spacy.matcher import PhraseMatcher\n",
+    "import spacy\n",
+    "\n",
+    "nlp = spacy.load('pt_core_news_sm')\n",
+    "\n",
+    "matcher = PhraseMatcher(nlp.vocab)\n",
+    "\n",
+    "EMPRESAS = ['CEDAE', 'EDS']\n",
+    "\n",
+    "patterns = list(nlp.pipe(EMPRESAS))\n",
+    "matcher.add('EMPRESAS', None, *patterns)\n",
+    "\n",
+    "tokens = nlp(\"Olá assistente virtual da EDS, preciso avisar a CEDAE sobre um vazamento no CEP 05508-030\")\n",
+    "# Call the matcher on the test document and print the result\n",
+    "matches = matcher(tokens)\n",
+    "print([tokens[start:end] for match_id, start, end in matches])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# from spacy.lang.pt import Portuguese\n",
+    "# from spacy.pipeline import EntityRuler\n",
+    "\n",
+    "# nlp = Portuguese()\n",
+    "# ruler = EntityRuler(nlp)\n",
+    "# patterns = [{\"label\": \"ORG\", \"pattern\": [\"CEDAE\", \"EDS\"]},\n",
+    "#             {\"label\": \"GPE\", \"pattern\": [{\"LOWER\": \"rio\"}, {\"LOWER\": \"janeiro\"}]}]\n",
+    "\n",
+    "# ruler.add_patterns(patterns)\n",
+    "# nlp.add_pipe(ruler)\n",
+    "\n",
+    "# doc = nlp(u\"Olá assistente virtual da EDS, preciso avisar a CEDAE sobre um vazamento no CEP 05508-030, \\\n",
+    "# Rio de Janeiro\")\n",
+    "\n",
+    "# print([(ent.text, ent.label_) for ent in doc.ents])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "CEP encontrado: 05508-030\n"
+     ]
+    }
+   ],
+   "source": [
+    "import re\n",
+    "\n",
+    "\n",
+    "cep = r\"[0-9]{5}-[0-9]{3}\"\n",
+    "for match in re.finditer(cep, tokens.text):\n",
+    "    start, end = match.span()\n",
+    "    span = tokens.char_span(start, end)\n",
+    "    # This is a Span object or None if match doesn't map to valid token sequence\n",
+    "    if span is not None:\n",
+    "        print(\"CEP encontrado:\", span.text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Regular Expression para identificar CEP\n",
+    "# CEPs = [{\"TEXT\": {\"REGEX\": \"[0-9]{5}-[0-9]{3}\"}}, \n",
+    "#         {\"TEXT\": {\"REGEX\": \"[0-9]{8}\"}}]\n",
+    "\n",
+    "# patterns2 = list(nlp.pipe(CEPs))\n",
+    "\n",
+    "# matcher.add('CEP', None, *patterns2)\n",
+    "\n",
+    "# matches = matcher(tokens)\n",
+    "# print([tokens[start:end] for match_id, start, end in matches])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Aprimoramento Contínuo do Assistente Virtual"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Segundo o documento [Watson Assistant Continuous Improvement Best Practices](https://www.ibm.com/downloads/cas/V0XQ0ZRE), para operar um assistente virtual que continua a cumprir todos os seus objetivos, é imperativo que haja um processo formal de avaliação do mesmo de modo a guiar o aperfeiçoamento do produto. Um processo de melhoria eficaz atenderá aos seguintes critérios:\n",
+    "\n",
+    "* Fornece um entendimento confiável do desempenho geral do assistente virtual.\n",
+    "\n",
+    "* Mostra claramente onde se deve priorizar seus esforços de melhoria.\n",
+    "\n",
+    "* Permite fazer melhorias necessárias da maneira mais eficiente possı́vel.\n",
+    "\n",
+    "As cinco fases de melhoria da figura logo abaixo compõem um processo que atende a esses critérios.\n",
+    "\n",
+    "<img src='img/17.png'>\n",
+    "\n",
+    "A primeira medida que deve ser o foco do esforço de melhoria é a **eficácia** no nı́vel de conversa. A eficácia mede quão bem o assistente está lidando com as conversas ou mensagens às quais está respondendo.\n",
+    "\n",
+    "Uma das formas de medir a **eficácia** é por analisar a **Contenção de Conversação**, que é a parte das conversas que não são entregues ou encaminhadas para um agente humano e a **Conclusão da Tarefa** que mede se o assistente concluiu ou não a tarefa solicitada pelo cliente durante uma conversa.\n",
+    "\n",
+    "Uma segunda medida importante é a **Cobertura**, que mede a proporção de mensagens às quais o assistente consegue\n",
+    "responder, ou seja, a quantidade de perguntas que o assistente forneceu uma resposta real, que está dentro do escopo de negócios, em comparação com as que não consegue responder (e.g *”Desculpe, eu ainda não fui treinado para responder isso”*). Enquanto a **Cobertura** é uma medida da frequência com que o assistente virtual ”pensa”que tem a resposta, a **Eficácia** é uma medida da eficácia dessas respostas. Essa distinção é útil porque o processo de melhoria do assistente virtual é diferente para as perguntas que ele está respondendo, em comparação com as que ele não consegue.\n",
+    "\n",
+    "Para obter essas métricas, tempos um *notebook* em Python que analisa os logs de conversa e responde as seguintes perguntas:\n",
+    "\n",
+    "* Quais são as intenções mais identificada pelo Assistente Virtual?\n",
+    "* Qual a palavra mais usada pelos usuários?\n",
+    "* Como o score de confiança do Assistente Virtual varia para cada intenção?\n",
+    "* Qual intenção costuma ter o fluxo que gera maior incerteza na hora de escolher as respostas associadas a intenção em questão?\n",
+    "* Quais combinações de palavras que geram essas incertezas?\n",
+    "\n",
+    "Tais respostas nos fornecem *insights* para, caso necessário, repensar a organização do fluxo de conversa, intenções e entidades."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Sugestões de Cursos e Leituras\n",
+    "\n",
+    "\n",
+    "![alt_text](https://images-na.ssl-images-amazon.com/images/I/61BVinCE-CL._SX258_BO1,204,203,200_.jpg)\n",
+    "\n",
+    "* [NLTK Book](https://www.nltk.org/book/)\n",
+    "\n",
+    "* [Advanced NLP with spaCy](https://www.nltk.org/book/)\n",
+    "\n",
+    "* [Processamento da Linguagem Natural - Coursera](https://www.coursera.org/learn/language-processing)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Pessoas Importantes para Seguir "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "* [Yoav Golberg](https://twitter.com/yoavgo?lang=en)\n",
+    "![alt_text](https://miro.medium.com/fit/c/256/256/0*LfsCWLocg9wiFea_.)\n",
+    "\n",
+    "* [Matthew Honnibal](https://twitter.com/honnibal?lang=en)\n",
+    "![alt_text](https://pydata.org/berlin2016/media/speaker_photos/profile_matt.png.128x128_q85.jpg)\n",
+    "\n",
+    "* [Ines Montani](https://twitter.com/_inesmontani)\n",
+    "![alt_text](https://d33wubrfki0l68.cloudfront.net/bbc6af123d06eae18b352e1d39ee41b889a3211a/e6b5e/assets/img/profile_ines.jpg)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
